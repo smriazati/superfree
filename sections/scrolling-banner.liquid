@@ -1,0 +1,28 @@
+<div>
+    {% if section.settings.heading != blank %}
+        <h2 class="banner__heading " {{ section.shopify_attributes }}>
+        <span>{{ section.settings.heading | escape }}</span>
+      </h2>
+    {% endif %}
+</div>
+
+
+{% schema %}
+{
+  "name": "Scrolling banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "text",
+      "default": "ANTI INFLAMMATORY ADAPTOGENIC ACTIVATED PARASYMPATHETIC PAIN FREE GUILT FREE SUPERFREE SUPERFOOD PLANT RICH CLEAN EATING CLEAR MIND GUT HEALING",
+      "label": "Text"
+    }
+  ],
+  "presets": [{
+    "name": "Home - Scrolling Banner",
+    "category": "Text"
+  }]
+}
+{% endschema %}

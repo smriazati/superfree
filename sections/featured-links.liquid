@@ -1,0 +1,27 @@
+<div>
+    {% if section.settings.heading != blank %}
+        <h2 class="banner__heading " {{ section.shopify_attributes }}>
+        <span>{{ section.settings.heading | escape }}</span>
+      </h2>
+    {% endif %}
+</div>
+
+
+{% schema %}
+{
+  "name": "Featured Links",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Menu"
+    }
+],
+  "presets": [{
+    "name": "Home - Featured links",
+    "category": "Text"
+  }]
+}
+{% endschema %}
