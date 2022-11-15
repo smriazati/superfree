@@ -16,10 +16,24 @@
             "settings": {
               "menu": "footer"
             }
+          },
+          "eb3cd442-ef2e-43a3-a63b-2f26c693fc23": {
+            "type": "link_list",
+            "settings": {
+              "menu": "footer-2"
+            }
+          },
+          "803c355b-e17a-45e6-a76d-012d3a365d05": {
+            "type": "link_list",
+            "settings": {
+              "menu": "footer-3"
+            }
           }
         },
         "block_order": [
-          "footer-0"
+          "footer-0",
+          "eb3cd442-ef2e-43a3-a63b-2f26c693fc23",
+          "803c355b-e17a-45e6-a76d-012d3a365d05"
         ],
         "settings": {
           "newsletter_enable": true,
