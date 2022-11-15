@@ -24,6 +24,7 @@
     "video": {
       "type": "video",
       "settings": {
+        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-11-13_at_10.54_1.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": ""
       }
@@ -31,7 +32,7 @@
     "3d2969a6-4f31-44d0-b3cb-797c1a8f536b": {
       "type": "featured-links",
       "settings": {
-        "menu": ""
+        "menu": "home-featured-links"
       }
     },
     "79a04a94-b502-4c5e-9c7c-37ff3f5f6315": {
