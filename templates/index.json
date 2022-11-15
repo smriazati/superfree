@@ -12,26 +12,45 @@
       "type": "featured-collection",
       "settings": {
         "title": "Shop",
-        "collection": "all"
+        "collection": "frontpage"
+      }
+    },
+    "a9f4b05d-f132-48b2-a968-896e381ed0c4": {
+      "type": "scrolling-banner",
+      "settings": {
+        "text": "ANTI INFLAMMATORY ADAPTOGENIC ACTIVATED PARASYMPATHETIC PAIN FREE GUILT FREE SUPERFREE SUPERFOOD PLANT RICH CLEAN EATING CLEAR MIND GUT HEALING"
       }
     },
     "video": {
       "type": "video",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-11-13_at_10.54_1.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "description": ""
+      }
+    },
+    "3d2969a6-4f31-44d0-b3cb-797c1a8f536b": {
+      "type": "featured-links",
+      "settings": {
+        "menu": "home-featured-links"
+      }
+    },
+    "79a04a94-b502-4c5e-9c7c-37ff3f5f6315": {
+      "type": "home-cta",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/GUN_0647_1.jpg",
+        "heading": "follow @Superfreefood on Instagram",
+        "link": "https:\/\/www.instagram.com",
+        "isNewTab": true
       }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "video"
+    "a9f4b05d-f132-48b2-a968-896e381ed0c4",
+    "video",
+    "3d2969a6-4f31-44d0-b3cb-797c1a8f536b",
+    "79a04a94-b502-4c5e-9c7c-37ff3f5f6315"
   ]
 }

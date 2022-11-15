@@ -60,6 +60,9 @@
 
         --page-width: 1392px;
 
+        --black: #000;
+        --white: #fff;
+
       }
 
       *,
@@ -96,7 +99,9 @@
     {% endstyle %}
 
     {{ 'typography.css' | asset_url | stylesheet_tag }}
+    {{ 'resets.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'utils.css' | asset_url | stylesheet_tag }}
 
     {% comment %} {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
