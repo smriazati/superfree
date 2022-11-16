@@ -49,6 +49,11 @@ footer.footer {
   padding-top: 66px;
 }
 
+.footer-navs,
+.footer-copy {
+  padding-left: 24px;
+}
+
 /* typography */
 
 .footer-navs ul li {
@@ -64,6 +69,10 @@ footer.footer {
   text-decoration: none;
   padding: 3px 0;
   display: inline-block;
+}
+
+.footer-navs .footer-nav-block {
+  margin-bottom: 24px;
 }
 
 .footer-navs .footer-nav-block:not(:last-child) {

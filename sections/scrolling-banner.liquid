@@ -1,7 +1,9 @@
-<div>
-    {% if section.settings.heading != blank %}
-        <h2 class="banner__heading " {{ section.shopify_attributes }}>
-        <span>{{ section.settings.heading | escape }}</span>
+{{ 'scrolling-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="scrolling-banner page-width">
+    {% if section.settings.text != blank %}
+        <h2 {{ section.shopify_attributes }}>
+        <span>{{ section.settings.text | escape }}</span>
       </h2>
     {% endif %}
 </div>

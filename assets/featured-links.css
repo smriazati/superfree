@@ -1,0 +1,14 @@
+.home-featured-links {
+    background: var(--black);
+    color: var(--white);
+    padding: 48px;
+}
+
+.home-featured-links ul.big-links {
+    justify-content: center;
+}
+
+.home-featured-links ul.big-links li a {
+    background: var(--white);
+    color: var(--black);
+}

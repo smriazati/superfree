@@ -122,28 +122,6 @@ header:not(.collapsed) .header-drawer {
     background-repeat: no-repeat;
 }
 
-ul.big-links {
-    display: flex;
-    justify-content: space-between;
-}
-
-ul.big-links li {
-    margin-right: 56px;
-}
-
-ul.big-links li a {
-    font-size: 50px;
-    font-weight: 300;
-    line-height: 75px;
-    letter-spacing: 0em;
-    text-align: center;
-    text-transform: uppercase;
-    display: flex;
-    border: 1px solid var(--white);
-    word-spacing: 100vw;
-    padding: 126px;
-}
-
 .nav-site-desktop li a {
     font-size: 16px;
     font-weight: 400;
@@ -155,7 +133,7 @@ ul.big-links li a {
 
 .header-drawer-wrapper,
 .header-grid {
-    width: var(--page-width);
+    width: calc(var(--page-width) - 48px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -164,8 +142,8 @@ ul.big-links li a {
 
     .header-drawer-wrapper,
     .header-grid {
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
+        width: calc(100% - 48px);
+        margin-left: 24px;
+        margin-right: 24px;
     }
 }

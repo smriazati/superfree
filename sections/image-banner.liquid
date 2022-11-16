@@ -1,8 +1,8 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
-<div id="Banner-{{ section.id }}" class="banner">
+<div class="section-image-banner page-width">
   {%- if section.settings.image != blank -%}
-    <div class="banner__media">
+    <div class="image-wrapper">
       {%-liquid
         assign image_height = section.settings.image.height
         assign sizes = "100vw"
@@ -18,19 +18,15 @@
     </div>
   {%- endif -%}
 
-  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
-    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+  <div class="text-wrapper">
+    <h2{{ section.shopify_attributes }}>
+      <span>{{ section.settings.heading | escape }}</span>
+    </h2>
 
-      <h2 class="banner__heading {{ section.settings.heading_size }}" {{ section.shopify_attributes }}>
-        <span>{{ section.settings.heading | escape }}</span>
-      </h2>
-
-      <div class="banner__buttons" {{ section.shopify_attributes }}>
-        {%- if section.settings.button != blank -%}
-          <a href="/shop" class="button">{{ section.settings.button | escape }}</a>
-        {%- endif -%}
-      </div>
-      
+    <div {{ section.shopify_attributes }}>
+      {%- if section.settings.button != blank -%}
+        <a href="/shop" class="btn btn-circle btn-glow"><span>{{ section.settings.button | escape }}</span></a>
+      {%- endif -%}
     </div>
   </div>
 </div>

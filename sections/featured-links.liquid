@@ -1,8 +1,14 @@
-<div>
-    {% if section.settings.heading != blank %}
-        <h2 class="banner__heading " {{ section.shopify_attributes }}>
-        <span>{{ section.settings.heading | escape }}</span>
-      </h2>
+{{ 'featured-links.css' | asset_url | stylesheet_tag }}
+
+<div class="home-featured-links">
+    {% if section.settings.menu != blank %}
+      <ul class="big-links plain">
+        {% for link in section.settings.menu.links -%}
+          <li>
+            {{ link.title | link_to: link.url }}
+          </li>
+        {%- endfor %}
+      </ul>
     {% endif %}
 </div>
 

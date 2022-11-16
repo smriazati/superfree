@@ -26,3 +26,103 @@ body {
     max-width: 100vw;
     overflow-x: hidden;
 } */
+
+.page-width {
+    max-width: var(--page-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.btn {
+    display: flex;
+}
+
+.btn span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-glow {
+    background: var(--glow-up);
+}
+
+.btn-circle {
+    height: 132px;
+    width: 132px;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+.btn-circle span {
+    font-family: var(--mono-serif);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    word-spacing: 100vw;
+}
+
+/* big links */
+
+ul.big-links {
+    display: flex;
+}
+
+ul.big-links li {
+    position: relative;
+    flex-basis: calc(33.333% - 10px);
+    box-sizing: border-box;
+}
+
+ul.big-links li::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+ul.big-links li:not(:last-child) {
+    margin-right: 56px;
+}
+
+ul.big-links li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    /* added for centered text */
+    justify-content: center;
+    /* added for centered text */
+    align-items: center;
+    /* added for centered text */
+
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    border: 1px solid var(--white);
+    word-spacing: 100vw;
+    padding: 126px;
+    border-radius: 1%;
+    transition: .3s ease all;
+}
+
+ul.big-links li a:hover {
+    border-radius: 50%;
+}
+
+.rte {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+}

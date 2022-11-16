@@ -1,11 +1,12 @@
 {
   "current": {
+    "logo": "shopify:\/\/shop_images\/Superfree-PrimaryLogo-white-transparent_1.png",
     "sections": {
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/Superfree-PrimaryLogo-white-transparent_1.png",
-          "menu": "main-menu"
+          "menu": "main-menu",
+          "menu-mobile": "main-menu"
         }
       },
       "footer": {

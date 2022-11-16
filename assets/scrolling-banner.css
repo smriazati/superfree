@@ -1,0 +1,17 @@
+.scrolling-banner {
+    background: var(--rose);
+    border-radius: 10px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 24px 0;
+    position: relative;
+}
+
+.scrolling-banner h2 {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
