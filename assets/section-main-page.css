@@ -21,3 +21,47 @@
   width: 52.5rem;
   height: 52.5rem;
 }
+
+/* about page */
+.page-about {
+  margin-top: 144px;
+  margin-bottom: 200px;
+}
+
+.page-about .rte h2 {
+  max-width: 100%;
+  font-size: 160px;
+  font-weight: 800;
+  line-height: 188px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  hyphens: manual;
+  margin-bottom: 62px;
+}
+
+.page-about .rte h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  margin-bottom: 24px;
+}
+
+.page-about .rte p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+
+.page-about p+h2,
+.page-about h3+h2 {
+  margin-top: 200px;
+}
+
+.page-about p,
+.page-about h3 {
+  max-width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+}
