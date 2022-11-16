@@ -1,0 +1,65 @@
+<div class="page-container main-page-padding">
+    <h1 class="h1 text-center mb-54">
+      {{ page.title | escape }}
+    </h1>
+    <div class="text page-content-max-width text-center">
+      {{ page.content }}
+    </div>
+    <div class="ingredients-list">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'ingredient' %}
+            <div class="ingredient-item" {{ block.shopify_attributes }}>
+              <div>
+                <h2 class="h2 mb-24">{{ block.settings.title }}</h2>
+                <p class="text mb-8">{{ block.settings.description }}</p>
+              </div>
+              <div>
+                {% if block.settings.product1 != blank or block.settings.product2 != blank or  block.settings.product3 != blank %}
+                  <h3 class="text-16-bold mb-8">Used in</h3>
+                  {% if block.settings.product1 != blank %}
+                    <a class="link-inline" href="/products/{{ block.settings.product1.handle }}">{{ block.settings.product1.title }}</a>
+                  {% endif %}
+                  {% if block.settings.product2 != blank %}
+                    <a class="link-inline" href="/products/{{ block.settings.product2.handle }}">{{ block.settings.product2.title }}</a>
+                  {% endif %}
+                  {% if block.settings.product3 != blank %}
+                    <a class="link-inline" href="/products/{{ block.settings.product3.handle }}">{{ block.settings.product3.title }}</a>
+                  {% endif %}
+                {% endif %}
+              </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+      </div>
+  </div>
+  
+  {% style %}
+  
+  {% endstyle %}
+  
+  {% schema %}
+  {
+    "name": "Page",
+    "blocks": [
+      {
+        "name": "FAQ",
+        "type": "faq",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Name"
+          },
+          {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+          }
+        ]
+      }
+    ]
+  }
+  {% endschema %}
+  
+  
