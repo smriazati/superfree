@@ -147,3 +147,7 @@ header:not(.collapsed) .header-drawer {
         margin-right: 24px;
     }
 }
+
+.cart-count-bubble {
+    display: none !important;
+}

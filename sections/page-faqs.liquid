@@ -1,32 +1,26 @@
-<div class="page-container main-page-padding">
-    <h1 class="h1 text-center mb-54">
+<div class="page-width page-faqs">
+    <h1 class="page-title title">
       {{ page.title | escape }}
     </h1>
-    <div class="text page-content-max-width text-center">
-      {{ page.content }}
-    </div>
-    <div class="ingredients-list">
+    <div class="faqs-list">
       {% for block in section.blocks %}
         {% case block.type %}
-          {% when 'ingredient' %}
-            <div class="ingredient-item" {{ block.shopify_attributes }}>
+          {% when 'faq' %}
+            <div class="faq-item" {{ block.shopify_attributes }}>
               <div>
-                <h2 class="h2 mb-24">{{ block.settings.title }}</h2>
-                <p class="text mb-8">{{ block.settings.description }}</p>
+                <h2 class="title">{{ block.settings.title }}</h2>
+                <div class="rte">{{ block.settings.text }}</div>
               </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'faq' %}
+            <div class="faq-item" {{ block.shopify_attributes }}>
               <div>
-                {% if block.settings.product1 != blank or block.settings.product2 != blank or  block.settings.product3 != blank %}
-                  <h3 class="text-16-bold mb-8">Used in</h3>
-                  {% if block.settings.product1 != blank %}
-                    <a class="link-inline" href="/products/{{ block.settings.product1.handle }}">{{ block.settings.product1.title }}</a>
-                  {% endif %}
-                  {% if block.settings.product2 != blank %}
-                    <a class="link-inline" href="/products/{{ block.settings.product2.handle }}">{{ block.settings.product2.title }}</a>
-                  {% endif %}
-                  {% if block.settings.product3 != blank %}
-                    <a class="link-inline" href="/products/{{ block.settings.product3.handle }}">{{ block.settings.product3.title }}</a>
-                  {% endif %}
-                {% endif %}
+                <h2 class="title">{{ block.settings.title }}</h2>
+                <div class="rte">{{ block.settings.text }}</div>
               </div>
             </div>
         {% endcase %}
@@ -35,7 +29,30 @@
   </div>
   
   {% style %}
-  
+
+  .faqs-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: masonry;
+    grid-gap: 24px;
+  }
+  .faq-item {
+    background: var(--white);
+    padding: 75px;
+    text-align: center;
+  }
+  .faq-item .title {
+    margin-bottom: 32px;
+  }
+  .faq-item .rte strong {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+  }
+  .faq-item .rte > *:not(:last-child) {
+    margin-bottom: 24px;
+  }
   {% endstyle %}
   
   {% schema %}
@@ -49,12 +66,12 @@
           {
             "type": "text",
             "id": "title",
-            "label": "Name"
+            "label": "Title"
           },
           {
-            "type": "textarea",
-            "id": "description",
-            "label": "Description"
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
           }
         ]
       }

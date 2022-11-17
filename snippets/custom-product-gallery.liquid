@@ -1,0 +1,31 @@
+{% comment %}
+    Renders a gallery
+
+    Accepts:
+    - images: {Object} (required)
+   
+    Usage:
+    {% render 'product-gallery', images: product.images %}
+{% endcomment %}
+
+{% comment %}theme-check-disable RemoteAsset{% endcomment %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer="defer"></script>
+{% comment %}theme-check-enable RemoteAsset{% endcomment %}
+
+<script src="{{ 'swiper.js' | asset_url }}" defer="defer"></script>
+{{ 'swiper.css' | asset_url | stylesheet_tag }}
+
+<div class="swiper">
+    <div class="swiper-wrapper">
+        {%- for img in images -%}
+            <div class="swiper-slide">
+                <img src="{{ img.src | image_url }}" alt="{{ img.alt }}" loading="lazy" width=800 height class="" />
+            </div>
+        {%- endfor -%}
+    </div>
+    <div class="swiper-controls">
+        <div class="swiper-button-prev"><span class="visually-hidden">Previous</span></div>
+        <div class="swiper-button-next"><span class="visually-hidden">Next</span></div>    
+    </div>  
+</div>
