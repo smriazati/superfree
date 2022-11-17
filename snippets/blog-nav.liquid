@@ -1,0 +1,76 @@
+{% comment %}
+    Renders an blog nav component
+
+    Accepts:
+    - blog: {Object} Blog object
+
+    Usage:
+    {%- render 'blog-nav' blog: blog -%}
+
+{% endcomment %}
+
+{%- liquid
+    assign articlesCount = blog.articles_count
+    assign ingredientsCount = 0
+    assign recipesCount = 0
+    assign travelsCount = 0
+  
+    for item in blog.articles
+      for tag in item.tags
+        if tag == 'Ingredients'
+          assign ingredientsCount = ingredientsCount | plus: 1
+        elsif tag == 'Recipes'
+          assign recipesCount = recipesCount | plus: 1
+        elsif tag == 'Travels'
+          assign travelsCount = travelsCount | plus: 1
+        endif
+      endfor 
+    endfor
+%}
+
+<ul class="blog-nav">
+    <li class="title">
+        <a href="/blogs/all">
+            <span>All</span>
+            <span class="annotation">{{ articlesCount }}</span>
+        </a>
+    </li>
+    <li class="title">
+        <a href="/blogs/all/tagged/ingredients">
+            <span>Ingredients</span>
+            <span class="annotation">{{ ingredientsCount }}</span>
+        </a>
+    </li>
+    <li class="title">
+        <a href="/blogs/all/tagged/recipes">
+            <span>Recipes</span>
+            <span class="annotation">{{ recipesCount }}</span>
+        </a>
+    </li>
+    <li class="title">
+        <a href="/blogs/all/tagged/travel">
+            <span>Travel</span>
+            <span class="annotation">{{ travelsCount }}</span>
+        </a>
+    </li>
+</ul>
+{% style %}
+.blog-nav {
+  margin-top: 30px;
+  margin-bottom: 42px;
+}
+
+.blog-nav li a {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-nav li a {
+  padding-bottom: 24px;
+}
+
+.blog-nav li .annotation {
+  align-self: flex-start;
+}
+
+{% endstyle %}

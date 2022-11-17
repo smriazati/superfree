@@ -16,6 +16,8 @@
   }
 {%- endstyle -%}
 
+{%- render 'blog-nav' blog: blog -%}
+
 {%- paginate blog.articles by 6 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
     <h1 class="title--primary">{{ blog.title | escape }}</h1>

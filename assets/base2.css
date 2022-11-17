@@ -145,3 +145,26 @@ ul.big-links li a:hover {
     margin-top: 48px;
     margin-bottom: 48px;
 }
+
+.annotation {
+    margin-left: 1ch;
+    font-family: var(--mono-serif);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+}
+
+/* blog */
+.main-blog .title--primary {
+    display: none;
+}
+
+.article-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+}

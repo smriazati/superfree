@@ -162,14 +162,6 @@
   justify-content: center;
 }
 
-.collection-title .annotation {
-  margin-left: 1ch;
-  font-family: var(--mono-serif);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0em;
-}
 
 .collection .description-wrapper {
   background: var(--white);
