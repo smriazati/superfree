@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "page-faqs",
+<<<<<<< HEAD
       "blocks": {
         "0c04186e-0eb8-4bcf-8992-190e5b418285": {
           "type": "faq",
@@ -22,6 +23,8 @@
         "0c04186e-0eb8-4bcf-8992-190e5b418285",
         "19584cdf-51a2-4526-bd99-1a3ef86998dc"
       ],
+=======
+>>>>>>> ec1c44d61c2dd097a9b0a47bf4f5d26683e1d450
       "settings": {
       }
     }
@@ -29,4 +32,8 @@
   "order": [
     "main"
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ec1c44d61c2dd097a9b0a47bf4f5d26683e1d450
