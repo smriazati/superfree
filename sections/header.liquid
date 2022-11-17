@@ -26,10 +26,15 @@
     <div class="header-drawer">
       <div id="menu-drawer" tabindex="-1" class="header-drawer-wrapper">
         <nav class="nav-shop">
-          <ul class="plain big-links">
-            <li><a href=""/>Shop Online (US)</a></li>
-            <li><a href=""/>Order Local (NC)</a></li>
-          </ul>
+          {% if section.settings.shopMenu != blank %}
+            <ul class="big-links plain">
+              {% for link in section.settings.shopMenu.links -%}
+                <li>
+                  {{ link.title | link_to: link.url }}
+                </li>
+              {%- endfor %}
+            </ul>
+          {% endif %}
         </nav>
         <nav class="nav-site-desktop">
           <ul role="list" class="plain">
@@ -149,6 +154,12 @@
   "name": "t:sections.header.name",
   "class": "section-header",
   "settings": [
+    {
+      "type": "link_list",
+      "id": "shopMenu",
+      "default": "main-menu",
+      "label": "Shop menu"
+    },
     {
       "type": "link_list",
       "id": "menu",

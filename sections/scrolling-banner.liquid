@@ -1,6 +1,6 @@
 {{ 'scrolling-banner.css' | asset_url | stylesheet_tag }}
 
-<div class="scrolling-banner page-width">
+<div class="scrolling-banner">
     {% if section.settings.text != blank %}
         <h2 {{ section.shopify_attributes }}>
         <span>{{ section.settings.text | escape }}</span>

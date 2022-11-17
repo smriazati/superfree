@@ -1,4 +1,4 @@
-@media screen and (max-width: 749px) {
+/* @media screen and (max-width: 749px) {
   .collection .grid__item:only-child {
     flex: 0 0 100%;
     max-width: 100%;
@@ -44,7 +44,7 @@
   }
 }
 
-.collection__description > * {
+.collection__description>* {
   margin: 0;
 }
 
@@ -77,4 +77,111 @@
 
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
+}
+ */
+
+/* custom */
+
+.page-collection .product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 24px;
+  text-align: center;
+  margin: 52px 0;
+}
+
+.page-collection .card:not(.ratio),
+.page-collection .card,
+.collection .description-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content max-content;
+  grid-gap: 30px;
+  height: 100%;
+}
+
+.page-collection .card .card__inner {
+  grid-row: 1 / 2;
+}
+
+.page-collection .card>.card__inner {
+  grid-row: 1 / 2;
+}
+
+.page-collection .card>.card__content {
+  grid-row: 2 / 3;
+}
+
+.page-collection .card__media {
+  width: 100%;
+  height: 100%;
+}
+
+.collection .card__information .card__heading {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0em;
+}
+
+.collection .card__information a,
+.collection .card__information a:hover {
+  text-decoration: none;
+}
+
+.collection .card-information .price {
+  font-family: var(--mono-serif);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.collection .card__information {
+  padding: 0;
+}
+
+.collection .description-wrapper .text-wrapper,
+.collection .card__inner {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.collection.shop .card__media .media img:first-child {
+  object-fit: contain;
+  padding: 50px;
+}
+
+.collection-title {
+  margin-top: 30px;
+}
+
+.collection-title .flex-row {
+  justify-content: center;
+}
+
+.collection-title .annotation {
+  margin-left: 1ch;
+  font-family: var(--mono-serif);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+.collection .description-wrapper {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.collection .description-wrapper .text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
