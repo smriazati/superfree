@@ -1,10 +1,32 @@
 {
-    "sections": {
-        "main": {
-            "type": "page-faqs"
+  "sections": {
+    "main": {
+      "type": "page-faqs",
+      "blocks": {
+        "0c04186e-0eb8-4bcf-8992-190e5b418285": {
+          "type": "faq",
+          "settings": {
+            "title": "Ingredients \/ Products",
+            "text": "<p><strong>What is maca maca, anyway?<\/strong><\/p><p>Think of it like a nut butter, but just so much better. Super luxurious and intentional, through and through. <\/p><p><strong>How long does it last?<\/strong><\/p><p>The shelf life of maca maca is 4-6 months unopened and unrefrigerated (stored in a cool, dry, shaded place). Just put it in the fridge after opening and it’ll last just as long, or keep at room temp and finish within 3 months! Other products vary, (link product descriptions), but given the right storage you’re able to stock up on all of our goods – the point is to have these supportive foods readily and consistently available for your daily life!<\/p><p><\/p>"
+          }
+        },
+        "19584cdf-51a2-4526-bd99-1a3ef86998dc": {
+          "type": "faq",
+          "settings": {
+            "title": "Nutrition",
+            "text": "<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/strong><\/p><p>Fusce iaculis dui ac sapien feugiat pellentesque. Suspendisse augue elit, ornare ut lectus nec, finibus rhoncus ipsum. Fusce volutpat, mi eget luctus sodales, elit orci luctus ipsum, eget egestas turpis arcu non tellus. Curabitur posuere iaculis venenatis. <\/p><p><strong>Cras ut nisl lobortis, posuere ipsum ut, hendrerit arcu.<\/strong><\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed quam nisi. In nisl libero, gravida sit amet elementum sit amet, pulvinar eu nulla. Maecenas pretium dolor a purus consectetur, a rutrum erat mollis. Ut consequat in turpis vitae semper. Cras sit amet volutpat lectus. Etiam malesuada nunc nulla. Fusce augue sem, volutpat id maximus non, porttitor vitae justo. Praesent non nulla ac ante tincidunt posuere vehicula quis augue. Ut porttitor, est eu imperdiet porttitor, massa elit varius lorem, ac lobortis nisi turpis eu sem.<\/p>"
+          }
         }
-    },
-    "order": [
-        "main"
-    ]
+      },
+      "block_order": [
+        "0c04186e-0eb8-4bcf-8992-190e5b418285",
+        "19584cdf-51a2-4526-bd99-1a3ef86998dc"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
