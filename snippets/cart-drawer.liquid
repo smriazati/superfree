@@ -22,7 +22,7 @@
           <div class="cart-drawer__warnings center{% if settings.cart_drawer_collection != blank %} cart-drawer__warnings--has-collection{% endif %}">
             <div class="cart-drawer__empty-content">
               <h2 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h2>
-              <button class="drawer__close" type="button" onclick="this.closest('cart-drawer').close()" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
+              <button class="drawer__close plain" type="button" onclick="this.closest('cart-drawer').close()" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
               <a href="{{ routes.all_products_collection_url }}" class="button">
                 {{ 'general.continue_shopping' | t }}
               </a>
@@ -47,7 +47,7 @@
       {%- endif -%}
       <div class="drawer__header">
         <h2 class="drawer__heading">{{ 'sections.cart.title' | t }}</h2>
-        <button class="drawer__close" type="button" onclick="this.closest('cart-drawer').close()" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
+        <button class="drawer__close plain" type="button" onclick="this.closest('cart-drawer').close()" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
       </div>
       <cart-drawer-items {% if cart == empty %}class=" is-empty"{% endif %}>
         <form action="{{ routes.cart_url }}" id="CartDrawer-Form" class="cart__contents cart-drawer__form" method="post">
@@ -207,7 +207,7 @@
                         <td class="cart-item__quantity" role="cell" headers="CartDrawer-ColumnQuantity">
                           <div class="cart-item__quantity-wrapper">
                             <quantity-input class="quantity">
-                              <button class="quantity__button no-js-hidden" name="minus" type="button">
+                              <button class="quantity__button no-js-hidden plain" name="minus" type="button">
                                 <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
                                 {% render 'icon-minus' %}
                               </button>
@@ -220,7 +220,7 @@
                                 id="Drawer-quantity-{{ item.index | plus: 1 }}"
                                 data-index="{{ item.index | plus: 1 }}"
                               >
-                              <button class="quantity__button no-js-hidden" name="plus" type="button">
+                              <button class="quantity__button no-js-hidden plain" name="plus" type="button">
                                 <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: item.product.title | escape }}</span>
                                 {% render 'icon-plus' %}
                               </button>
@@ -316,12 +316,12 @@
 
         <div class="cart__ctas" {{ block.shopify_attributes }}>
           <noscript>
-            <button type="submit" class="cart__update-button button button--secondary" form="CartDrawer-Form">
+            <button type="submit" class="cart__update-button button button--secondary btn-rainbow" form="CartDrawer-Form">
               {{ 'sections.cart.update' | t }}
             </button>
           </noscript>
 
-          <button type="submit" id="CartDrawer-Checkout" class="cart__checkout-button button" name="checkout" form="CartDrawer-Form"{% if cart == empty %} disabled{% endif %}>
+          <button type="submit" id="CartDrawer-Checkout" class="cart__checkout-button button button--secondary btn-rainbow" name="checkout" form="CartDrawer-Form"{% if cart == empty %} disabled{% endif %}>
             {{ 'sections.cart.checkout' | t }}
           </button>
         </div>

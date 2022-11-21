@@ -212,3 +212,7 @@
 .article-template__content {
   max-width: 330px;
 }
+
+.article-template__content p+p {
+  margin-top: 24px;
+}

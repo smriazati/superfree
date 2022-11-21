@@ -36,7 +36,6 @@
   margin-top: 34px;
   background: var(--black);
   color: var(--white);
-  border-radius: 10px;
   padding: 17px;
 }
 
@@ -57,7 +56,6 @@
 
 .product-info-extra>* {
   background: var(--white);
-  border-radius: 10px;
   padding: 210px 75px;
   text-align: center;
 }

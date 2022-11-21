@@ -17,7 +17,7 @@
   box-sizing: border-box;
 }
 
-.article-card__image-wrapper > a {
+.article-card__image-wrapper>a {
   display: block;
 }
 
@@ -48,12 +48,6 @@
 
 .article-card .card__heading {
   margin-bottom: 0.6rem;
-}
-
-.blog-articles .article-card .card__information,
-.blog__posts .article-card .card__information {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .article-card__info {

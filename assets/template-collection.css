@@ -145,7 +145,6 @@
 .collection .description-wrapper .text-wrapper,
 .collection .card__inner {
   background: var(--white);
-  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -165,7 +164,6 @@
 
 .collection .description-wrapper {
   background: var(--white);
-  border-radius: 10px;
   overflow: hidden;
   display: flex;
   justify-content: center;

@@ -12,9 +12,50 @@ button {
     background: transparent;
 }
 
+@keyframes slide {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100vw;
+    }
+}
+
+.button--secondary,
+.btn-rainbow {
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    padding: 16px;
+    background: var(--black);
+    background: linear-gradient(270deg, var(--black) -16.44%, var(--black) 1.82%, var(--black) 49.78%, var(--black) 102.78%);
+    color: var(--white);
+    transition: .3s ease all;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button--secondary:hover,
+.btn-rainbow:hover {
+    background: linear-gradient(270deg, var(--black) -16.44%, var(--rose) 1.82%, #FBD786 49.78%, #C6FFDD 102.78%);
+    background-size: 100vw 100vw;
+    animation: 'slide' 3s infinite linear forwards;
+    animation-duration: 3.5s;
+}
+
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a::before:hover {
+    text-decoration-style: wavy;
 }
 
 .link-hover:hover {
@@ -47,6 +88,23 @@ body {
 
 .btn-glow {
     background: var(--glow-up);
+    color: var(--black);
+    transition: .3s ease all;
+}
+
+.btn-glow:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .btn-circle {
@@ -54,6 +112,7 @@ body {
     width: 132px;
     border-radius: 50%;
     transform: rotate(45deg);
+    animation: 5s linear infinite reverse both running rotateCircle;
 }
 
 .btn-circle span {

@@ -18,12 +18,7 @@
     <div class="collection-title">
       <div class="flex-row">
         <h1 class="title center">{{ collection.title }}</h1>
-        {% if collection.handle == 'shop' %}
-          <span class="annotation">2</span>
-        {% endif %}
-        {% if collection.handle == 'local' %}
-          <span class="annotation">3</span>
-        {% endif %}
+        <span class="annotation">{{ collection.all_products_count }}</span>
       </div>
     </div>
 

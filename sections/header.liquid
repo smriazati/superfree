@@ -77,11 +77,12 @@
               {%- if settings.logo != blank -%}
                 {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
                 {%- assign logo_height = 24 -%}
+                {%- assign logo_width = 126 -%}
                 {{ settings.logo | image_url: width: 126 | image_tag:
                   class: 'header__heading-logo',
-                  widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                  widths: '126, 252',
                   height: logo_height,
-                  width: 126,
+                  width: logo_width,
                   alt: logo_alt
                 }}
               {%- else -%}
