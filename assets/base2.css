@@ -227,3 +227,28 @@ ul.big-links li a:hover {
     text-align: center;
     text-transform: uppercase;
 }
+
+
+/* age checker */
+
+.agp__container {
+    display: flex;
+    align-items: center;
+}
+
+.agp__background {
+    background-color: var(--rose) !important;
+}
+
+.agp__heading {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 67px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.agp__row {
+    background: transparent !important;
+}
