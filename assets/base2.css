@@ -241,14 +241,37 @@ ul.big-links li a:hover {
 }
 
 .agp__heading {
-    font-size: 48px;
-    font-weight: 300;
-    line-height: 67px;
-    letter-spacing: 0em;
-    text-align: center;
-    text-transform: uppercase;
+    font-size: 48px !important;
+    font-weight: 300 !important;
+    line-height: 67px !important;
+    letter-spacing: 0em !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
 }
 
 .agp__row {
     background: transparent !important;
+}
+
+.agp__container input[type=submit] {
+    background: var(--black);
+    color: var(--rose);
+    border: 1px solid black !important;
+    transition: .3s ease all;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    letter-spacing: 0em !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+}
+
+.agp__container input[type=submit] {
+    background: var(--rose);
+    color: var(--black);
+    cursor: pointer;
+}
+
+.agp__disclaimer {
+    display: none !important;
 }
