@@ -247,6 +247,7 @@ ul.big-links li a:hover {
     letter-spacing: 0em !important;
     text-align: center !important;
     text-transform: uppercase !important;
+    margin-bottom: 60px !important;
 }
 
 .agp__row {
@@ -266,7 +267,7 @@ ul.big-links li a:hover {
     text-transform: uppercase !important;
 }
 
-.agp__container input[type=submit] {
+.agp__container input[type=submit]:hover {
     background: var(--rose);
     color: var(--black);
     cursor: pointer;

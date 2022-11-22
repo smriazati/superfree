@@ -150,7 +150,7 @@
 
 .collection.shop .card__media .media img:first-child {
   object-fit: contain;
-  padding: 50px;
+  padding: 75px;
 }
 
 .collection-title {
@@ -174,4 +174,26 @@
   justify-content: center;
   align-items: center;
   padding: 50px;
+}
+
+.product-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 111;
+  position: relative;
+  text-align: center;
+}
+
+.product-status span {
+  font-size: 66px;
+  font-weight: 300;
+  line-height: 73px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--silver);
 }

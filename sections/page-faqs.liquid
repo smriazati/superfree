@@ -1,19 +1,10 @@
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 <div class="page-width page-faqs">
     <h1 class="page-title title">
       {{ page.title | escape }}
     </h1>
-    <div class="faqs-list">
-      {% for block in section.blocks %}
-        {% case block.type %}
-          {% when 'faq' %}
-            <div class="faq-item" {{ block.shopify_attributes }}>
-              <div>
-                <h2 class="title">{{ block.settings.title }}</h2>
-                <div class="rte">{{ block.settings.text }}</div>
-              </div>
-            </div>
-        {% endcase %}
-      {% endfor %}
+    <div class="faqs-list" data-masonry='{ "itemSelector": ".faq-item", "columnWidth": 200 }'>
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'faq' %}
@@ -31,15 +22,15 @@
   {% style %}
 
   .faqs-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: masonry;
-    grid-gap: 24px;
+    /* columns: 2;
+    column-gap: 24px;
+    margin-bottom: 180px; */
   }
   .faq-item {
     background: var(--white);
     padding: 75px;
     text-align: center;
+    margin-bottom: 24px;
   }
   .faq-item .title {
     margin-bottom: 32px;

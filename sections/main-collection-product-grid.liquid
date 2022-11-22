@@ -25,15 +25,7 @@
     <div class="product-grid-container" id="ProductGridContainer">
       {%- paginate collection.products by section.settings.products_per_page -%}
         {%- if collection.products.size == 0 -%}
-          <div id="product-grid" data-id="{{ section.id }}">
-            <div class="loading-overlay"></div>
-            <div>
-              <h2 class="title title--primary">
-                {{ 'sections.collection_template.empty' | t }}<br>
-                {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
-              </h2>
-            </div>
-          </div>
+          <p>There are no products in this collection.</p>
         {%- else -%}
           <div class="collection {% if collection.handle == 'shop' %}shop{% endif %} page-width">
             <div class="loading-overlay gradient"></div>

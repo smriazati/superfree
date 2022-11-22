@@ -3,6 +3,7 @@ function initSwiper() {
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
+        loop: true,
         keyboard: {
             enabled: true,
             onlyInViewport: false,

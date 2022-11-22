@@ -76,3 +76,7 @@
   letter-spacing: 0em;
   text-transform: lowercase;
 }
+
+.product__info-container .price__badge-sold-out {
+  display: none;
+}
