@@ -4,7 +4,7 @@
     <h1 class="page-title title">
       {{ page.title | escape }}
     </h1>
-    <div class="faqs-list" data-masonry='{ "itemSelector": ".faq-item", "columnWidth": 200 }'>
+    <div class="faqs-list" data-masonry='{ "itemSelector": ".faq-item", "columnWidth": ".faq-item" }'>
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'faq' %}
@@ -22,15 +22,20 @@
   {% style %}
 
   .faqs-list {
+    margin-bottom: 180px;
     /* columns: 2;
     column-gap: 24px;
-    margin-bottom: 180px; */
+     */
   }
   .faq-item {
     background: var(--white);
     padding: 75px;
     text-align: center;
     margin-bottom: 24px;
+    width: calc(50% - 24px);
+  }
+  .faq-item:nth-child(odd) {
+    margin-right: 24px;
   }
   .faq-item .title {
     margin-bottom: 32px;
