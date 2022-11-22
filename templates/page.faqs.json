@@ -14,13 +14,45 @@
           "type": "faq",
           "settings": {
             "title": "Nutrition",
-            "text": "<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/strong><\/p><p>Fusce iaculis dui ac sapien feugiat pellentesque. Suspendisse augue elit, ornare ut lectus nec, finibus rhoncus ipsum. Fusce volutpat, mi eget luctus sodales, elit orci luctus ipsum, eget egestas turpis arcu non tellus. Curabitur posuere iaculis venenatis. <\/p><p><strong>Cras ut nisl lobortis, posuere ipsum ut, hendrerit arcu.<\/strong><\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed quam nisi. In nisl libero, gravida sit amet elementum sit amet, pulvinar eu nulla. Maecenas pretium dolor a purus consectetur, a rutrum erat mollis. Ut consequat in turpis vitae semper. Cras sit amet volutpat lectus. Etiam malesuada nunc nulla. Fusce augue sem, volutpat id maximus non, porttitor vitae justo. Praesent non nulla ac ante tincidunt posuere vehicula quis augue. Ut porttitor, est eu imperdiet porttitor, massa elit varius lorem, ac lobortis nisi turpis eu sem.<\/p>"
+            "text": ""
+          }
+        },
+        "2c8c6ffe-6c32-456f-a926-c29af225c8c4": {
+          "type": "faq",
+          "settings": {
+            "title": "Hemp",
+            "text": ""
+          }
+        },
+        "ed4a53cf-1570-4d6e-9f6c-1564a8d9d5f6": {
+          "type": "faq",
+          "settings": {
+            "title": "Usage & Rituals",
+            "text": ""
+          }
+        },
+        "77667bc5-9d7a-4ce7-8df6-cdb82a63aaaa": {
+          "type": "faq",
+          "settings": {
+            "title": "OTHER",
+            "text": ""
+          }
+        },
+        "6f33dc01-e0d7-41e4-81c6-54ee58a3b2d2": {
+          "type": "faq",
+          "settings": {
+            "title": "Stockists",
+            "text": ""
           }
         }
       },
       "block_order": [
         "0c04186e-0eb8-4bcf-8992-190e5b418285",
-        "19584cdf-51a2-4526-bd99-1a3ef86998dc"
+        "19584cdf-51a2-4526-bd99-1a3ef86998dc",
+        "2c8c6ffe-6c32-456f-a926-c29af225c8c4",
+        "ed4a53cf-1570-4d6e-9f6c-1564a8d9d5f6",
+        "77667bc5-9d7a-4ce7-8df6-cdb82a63aaaa",
+        "6f33dc01-e0d7-41e4-81c6-54ee58a3b2d2"
       ],
       "settings": {
       }
