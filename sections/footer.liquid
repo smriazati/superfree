@@ -4,24 +4,68 @@
 
 <footer class="footer">
   <div class="footer-grid">
-  <div class="footer-navs flex-row flex-wrap">
-    {%- if section.blocks.size > 0   -%}
-      {%- for block in section.blocks -%}
-        <div class="footer-nav-block" {{ block.shopify_attributes }}>
-          {%- if block.settings.menu != blank -%}
-            <ul class=plain>
-              {%- for link in block.settings.menu.links -%}
-                <li>
-                  <a href="{{ link.url }}" class="">
-                    {{ link.title }}
-                  </a>
-                </li>
-              {%- endfor -%}
-            </ul>
-          {%- endif -%}
+  <div class="footer-navs">
+        <div class="footer-nav-block">
+          {% if section.settings.footer-menu-1 != blank %}
+          <ul role="list" class="plain">
+            {%- for link in section.settings.footer-menu-1.links -%}
+              <li>
+                <a href="{{ link.url }}">
+                  {{ link.title | escape }}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {% endif %}
+        {% if section.settings.footer-menu-2 != blank %}
+          <ul role="list" class="plain">
+            {%- for link in section.settings.footer-menu-2.links -%}
+              <li>
+                <a href="{{ link.url }}">
+                  {{ link.title | escape }}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+         {% endif %}
+
+          {% if section.settings.footer-menu-3 != blank %}
+          <ul role="list" class="plain muted-menu">
+            {%- for link in section.settings.footer-menu-3.links -%}
+              <li>
+                <a href="{{ link.url }}">
+                  {{ link.title | escape }}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {% endif %}
+
         </div>
-      {%- endfor -%}
-    {%- endif -%}
+  </div>
+  <div class="footer-navs-mobile">
+    {% if section.settings.footer-menu-mobile-1 != blank %}
+      <ul role="list" class="plain">
+        {%- for link in section.settings.footer-menu-mobile-1.links -%}
+          <li>
+            <a href="{{ link.url }}">
+              {{ link.title | escape }}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {% endif %}
+    {% if section.settings.footer-menu-mobile-2 != blank %}
+      <ul role="list" class="plain muted-menu-mobile">
+        {%- for link in section.settings.footer-menu-mobile-2.links -%}
+          <li>
+            <a href="{{ link.url }}">
+              {{ link.title | escape }}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {% endif %}
   </div>
   <div class="footer-news">
     {%- if section.settings.newsletter_enable -%}
@@ -122,22 +166,34 @@
 {% schema %}
 {
   "name": "t:sections.footer.name",
-  "blocks": [
+
+  "settings": [
     {
       "type": "link_list",
-      "name": "t:sections.footer.blocks.link_list.name",
-      "settings": [
-        {
-          "type": "link_list",
-          "id": "menu",
-          "default": "footer",
-          "label": "t:sections.footer.blocks.link_list.settings.menu.label",
-          "info": "t:sections.footer.blocks.link_list.settings.menu.info"
-        }
-      ]
-    }
-  ],
-  "settings": [
+      "id": "footer-menu-1",
+      "default": "footer",
+      "label": "Footer menu 1 (large screens)"
+    },
+    {
+      "type": "link_list",
+      "id": "footer-menu-2",
+      "label": "Footer menu 2 (large screens)"
+    },
+    {
+      "type": "link_list",
+      "id": "footer-menu-3",
+      "label": "Footer menu 3 (large screens)"
+    },
+    {
+      "type": "link_list",
+      "id": "footer-menu-mobile-1",
+      "label": "Footer menu 1 (small screens)"
+    },
+    {
+      "type": "link_list",
+      "id": "footer-menu-mobile-2",
+      "label": "Footer menu 2 (small screens)"
+    },
     {
       "type": "header",
       "content": "t:sections.footer.settings.header__1.content",
@@ -171,13 +227,6 @@
       "default": "* These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. This product is not for use by or sale to persons under the age of 21.",
       "label": "Disclosure"
     }
-  ],
-  "default": {
-    "blocks": [
-      {
-        "type": "link_list"
-      }
-    ]
-  }
+  ]
 }
 {% endschema %}

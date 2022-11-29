@@ -12,32 +12,12 @@
       },
       "footer": {
         "type": "footer",
-        "blocks": {
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "menu": "footer"
-            }
-          },
-          "eb3cd442-ef2e-43a3-a63b-2f26c693fc23": {
-            "type": "link_list",
-            "settings": {
-              "menu": "footer-2"
-            }
-          },
-          "803c355b-e17a-45e6-a76d-012d3a365d05": {
-            "type": "link_list",
-            "settings": {
-              "menu": "footer-3"
-            }
-          }
-        },
-        "block_order": [
-          "footer-0",
-          "eb3cd442-ef2e-43a3-a63b-2f26c693fc23",
-          "803c355b-e17a-45e6-a76d-012d3a365d05"
-        ],
         "settings": {
+          "footer1": "footer",
+          "footer-2": "footer-2",
+          "footer-3": "footer-3",
+          "footer-menu-mobile-1": "footer-menu-mobile-1",
+          "footer-menu-mobile-2": "footer-menu-mobile-2",
           "newsletter_enable": true,
           "newsletter_heading": "Be a rainbow body and other perks",
           "newsletter_body": "insights \/ events and happenings \/ product uses \/ recipes \/ resources \/ new product announcements \/ insider perks",
