@@ -66,14 +66,6 @@
         "include_margins": true
       }
     },
-    "f06d07ac-9ea0-4c39-99c4-c44196f8625d": {
-      "type": "video",
-      "settings": {
-        "cover_image": "shopify:\/\/shop_images\/MacaMaca-Underwater.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": ""
-      }
-    },
     "ad49fdaf-2ba7-4f8c-9f25-8bfa26cfd2d2": {
       "type": "scrolling-banner",
       "settings": {
@@ -84,7 +76,6 @@
   "order": [
     "main",
     "1668645280b8cf3c4e",
-    "f06d07ac-9ea0-4c39-99c4-c44196f8625d",
     "ad49fdaf-2ba7-4f8c-9f25-8bfa26cfd2d2"
   ]
 }
