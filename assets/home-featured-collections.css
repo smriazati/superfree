@@ -2,19 +2,26 @@
     background: var(--chrome);
     text-align: center;
     padding: 96px 24px;
-    margin: 24px 0;
 }
 
 .home-featured-collections .product-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 24px;
 }
 
 @media (min-width: 998px) {
     .home-featured-collections .product-grid {
-        grid-gap: 100px;
         margin-top: 100px;
     }
+}
+
+.home-featured-collections .product-grid>*:first-child {
+    grid-column: 2 / 4;
+}
+
+.home-featured-collections .product-grid>*:last-child {
+    grid-column: 6 / 8;
 }
 
 .home-featured-collections .image-wrapper {

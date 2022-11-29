@@ -3,9 +3,13 @@
   grid-template: 1fr / 1fr;
   height: 80vh;
   overflow: hidden;
-  padding-left: 24px;
-  padding-right: 24px;
   position: relative;
+}
+
+@media (max-height: 600px) {
+  .section-image-banner {
+    height: 800px;
+  }
 }
 
 .section-image-banner .button-wrapper,

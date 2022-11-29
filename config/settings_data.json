@@ -13,9 +13,9 @@
       "footer": {
         "type": "footer",
         "settings": {
-          "footer1": "footer",
-          "footer-2": "footer-2",
-          "footer-3": "footer-3",
+          "footer-menu-1": "footer",
+          "footer-menu-2": "footer-2",
+          "footer-menu-3": "footer-3",
           "footer-menu-mobile-1": "footer-menu-mobile-1",
           "footer-menu-mobile-2": "footer-menu-mobile-2",
           "newsletter_enable": true,

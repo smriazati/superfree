@@ -1,0 +1,37 @@
+<div class="video-section page-width flex-row">
+    <video muted autoplay loop>
+        <source src="https://cdn.shopify.com/videos/c/o/v/94f1a9b3ec524fb899d961ab17aa9921.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+{% style %}
+.video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 998px) {
+    .video-section {
+        height: 520px;
+    }
+}
+{% endstyle %}
+{% schema %}
+{
+  "name": "t:sections.video.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "t:sections.video.settings.cover_image.label"
+    }
+  ],
+  "presets": [{
+    "name": "Custom Video",
+    "category": "Text"
+  }]
+}
+{% endschema %}

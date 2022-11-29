@@ -11,8 +11,6 @@ header.header {
     align-items: center;
     background: var(--black);
     color: var(--white);
-    margin: 24px 0;
-    border-radius: 50px;
     padding: 11px 24px;
 }
 
@@ -142,13 +140,8 @@ header:not(.collapsed) .header-drawer {
     margin-right: auto;
 }
 
-@media (max-width: 1392px) {
-
-    .header-grid {
-        width: calc(100% - 48px);
-        margin-left: 24px;
-        margin-right: 24px;
-    }
+.header-grid {
+    width: 100%;
 }
 
 .cart-count-bubble {

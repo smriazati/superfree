@@ -1,8 +1,10 @@
 .home-cta {
-    height: 538px;
-    margin-top: 24px;
-    margin-bottom: 24px;
     overflow: hidden;
+}
+
+.home-cta,
+.home-cta a .image-wrapper {
+    height: 538px;
 }
 
 .home-cta a {

@@ -145,17 +145,7 @@
   </div>
   <div class="footer-logo">
     <div class="image-wrapper">
-    {%- if settings.logo != blank -%}
-      {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-      {%- assign logo_height = 274 -%}
-      {{ settings.logo | image_url: width: 1405 | image_tag:
-        class: 'header__heading-logo',
-        widths: '50, 100, 150, 200, 250, 300, 400, 500, 800, 1392',
-        height: logo_height,
-        width: 1405,
-        alt: logo_alt
-      }}
-    {%- endif -%}
+    <img src="https://cdn.shopify.com/s/files/1/0640/6776/4452/files/Superfree-logo-chrome.png?v=1669749825" alt="metallic logo" />
     </div>
   </div>
   </div>
