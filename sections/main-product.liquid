@@ -679,6 +679,18 @@
       </div>
     </div> 
 
+    <div class="product-image-metafield">
+      {%- if product.metafields.custom.image != blank -%}
+        {{ product.metafields.custom.image | image_url: width: 1500 | image_tag:
+          loading: 'lazy',
+          width: '100vw',
+          height: 'auto',
+          sizes: '100vw',
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          alt: 'image' | escape
+        }}
+      {%- endif %}
+    </div>
   </div>
 
   {% comment %} {% render 'product-media-modal' variant_images: variant_images %} {% endcomment %}

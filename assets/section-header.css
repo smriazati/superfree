@@ -273,10 +273,6 @@ header ul.big-links li a .text-wrapper {
         text-transform: uppercase;
     }
 
-    header ul.big-links li {
-        flex: calc(100vw - 48px);
-    }
-
     .nav-site-mobile {
         padding-top: 24px;
     }
@@ -318,12 +314,4 @@ header ul.big-links li a .text-wrapper {
         justify-content: center;
     }
 
-    .header-grid {
-        transition: .3s ease all;
-    }
-
-    header:not(.collapsed) .header-grid {
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
