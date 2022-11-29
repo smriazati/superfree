@@ -8,7 +8,7 @@ footer.footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: auto;
-  max-width: var(--page-width);
+  max-width: 100vw;
   margin: 0 auto;
   grid-template-areas:
     "nav news"
@@ -47,6 +47,7 @@ footer.footer {
 
 .footer-logo {
   padding-top: 66px;
+  text-align: center;
 }
 
 .footer-navs,
@@ -75,12 +76,11 @@ footer.footer {
   margin-bottom: 24px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
 }
 
 
-.footer-navs .footer-nav-block:not(:last-child) {
+.footer-navs .footer-nav-block>*:not(:last-child) {
   margin-right: 65px;
 }
 
