@@ -18,6 +18,16 @@
           "settings": {
           }
         },
+        "2b0a79c0-5dc2-48cb-aab4-8982522c3e5a": {
+          "type": "shopify:\/\/apps\/appstle-subscriptions\/blocks\/appstle-subscription-product-page-widget\/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
+          "settings": {
+          }
+        },
+        "aa7def3f-3366-4f3c-87aa-cce8fd49b7a4": {
+          "type": "shopify:\/\/apps\/back-in-stock-restock\/blocks\/backinstock\/a2a0a648-aa81-4132-98a8-31e62b1f3e83",
+          "settings": {
+          }
+        },
         "947a3115-e477-4650-8b4c-326df7d43ab1": {
           "type": "buy_buttons",
           "settings": {
@@ -29,6 +39,8 @@
         "7b74ea3a-c660-4762-99ef-9b931aea5e43",
         "0ae9ca77-c074-4080-9aab-b13893312d16",
         "34d1b107-72c6-42e7-8072-bf5ccab0fa5f",
+        "2b0a79c0-5dc2-48cb-aab4-8982522c3e5a",
+        "aa7def3f-3366-4f3c-87aa-cce8fd49b7a4",
         "947a3115-e477-4650-8b4c-326df7d43ab1"
       ],
       "settings": {
@@ -46,22 +58,6 @@
     },
     "1668645280b8cf3c4e": {
       "type": "apps",
-      "blocks": {
-        "4f0cd400-24fe-414e-a6b3-03c80d386dc6": {
-          "type": "shopify:\/\/apps\/appstle-subscriptions\/blocks\/appstle-subscription-product-page-widget\/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
-          "settings": {
-          }
-        },
-        "8d7a6fce-a52f-41f0-8bbf-a76c77e5959e": {
-          "type": "shopify:\/\/apps\/back-in-stock-restock\/blocks\/backinstock\/a2a0a648-aa81-4132-98a8-31e62b1f3e83",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "4f0cd400-24fe-414e-a6b3-03c80d386dc6",
-        "8d7a6fce-a52f-41f0-8bbf-a76c77e5959e"
-      ],
       "settings": {
         "include_margins": true
       }

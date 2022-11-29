@@ -39,7 +39,7 @@
   }
 }
 
-.product-form__buttons {
+.product-form__buttons>button {
   margin-top: 34px;
   background: var(--black);
   color: var(--white);
@@ -164,4 +164,9 @@
 #appstle_subscription_widget0 .appstle_subscription_wrapper_option {
   padding-top: 31px !important;
   padding-bottom: 31px !important;
+}
+
+#zooomybackinstock form+div {
+  height: 0;
+  overflow: hidden;
 }
