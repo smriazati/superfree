@@ -114,3 +114,41 @@
   max-height: 628px;
   object-fit: cover;
 }
+
+/* appstle styles */
+#appstle_subscription_widget0 {
+  max-width: 100%;
+  padding: 0 24px;
+}
+
+.appstle_sub_widget {
+  text-transform: lowercase;
+}
+
+.appstle_widget_title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+
+.appstle_tooltip_wrapper {
+  display: none;
+}
+
+#appstle_subscription_widget0 .appstle_subscription_wrapper_option:first-child,
+#appstle_subscription_widget0 .appstle_subscription_wrapper {
+  border-color: var(--black);
+  border-width: 2px;
+}
+
+.appstle_subscription_amount,
+.appstle_subscribe_save_text,
+.appstle_one_time_text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: lowercase;
+}
