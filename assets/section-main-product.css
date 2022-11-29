@@ -133,7 +133,7 @@
 }
 
 .appstle_tooltip_wrapper {
-  display: none;
+  display: none !important;
 }
 
 #appstle_subscription_widget0 .appstle_subscription_wrapper_option:first-child,
@@ -151,4 +151,17 @@
   letter-spacing: 0em;
   text-align: left;
   text-transform: lowercase;
+}
+
+#appstle_subscription_widget0 .appstle_subscription_radio_wrapper {
+  align-items: center !important;
+}
+
+#appstle_subscription_widget0 .appstle_subscription_amount_wrapper {
+  display: flex;
+}
+
+#appstle_subscription_widget0 .appstle_subscription_wrapper_option {
+  padding-top: 31px !important;
+  padding-bottom: 31px !important;
 }
