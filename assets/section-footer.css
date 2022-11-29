@@ -79,6 +79,9 @@ footer.footer {
   width: 100%;
 }
 
+.footer-navs .footer-nav-block>* {
+  margin-bottom: 24px;
+}
 
 .footer-navs .footer-nav-block>*:not(:last-child) {
   margin-right: 65px;

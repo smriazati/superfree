@@ -2,7 +2,7 @@
     background: var(--rose);
     padding: 24px 0;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .scrolling-banner h2 {
@@ -13,3 +13,5 @@
     text-transform: uppercase;
     white-space: nowrap;
 }
+
+/* Marquee styles */

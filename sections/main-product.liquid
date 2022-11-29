@@ -347,8 +347,9 @@
               </noscript>
             {%- when 'buy_buttons' -%}
               <div {{ block.shopify_attributes }}>
+                
                 <product-form class="product-form">
-                  <div class="product-form__error-message-wrapper" role="alert" hidden>
+                  {% comment %} <div class="product-form__error-message-wrapper" role="alert" hidden>
                     <svg
                       aria-hidden="true"
                       focusable="false"
@@ -361,7 +362,7 @@
                       <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
                     </svg>
                     <span class="product-form__error-message"></span>
-                  </div>
+                  </div> {% endcomment %}
 
                   {%- form 'product',
                     product,
@@ -404,9 +405,9 @@
                           </svg>
                         </div>
                       </button>
-                      {%- if block.settings.show_dynamic_checkout -%}
+                      {% comment %} {%- if block.settings.show_dynamic_checkout -%}
                         {{ form | payment_button }}
-                      {%- endif -%}
+                      {%- endif -%} {% endcomment %}
                     </div>
                   {%- endform -%}
                 </product-form>
@@ -442,7 +443,7 @@
 
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
                {% endcomment %}
-            {%- when 'rating' -%}
+            {% comment %} {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
                   assign rating_decimal = 0
@@ -477,8 +478,8 @@
                     {{ 'accessibility.total_reviews' | t -}}
                   </span>
                 </p>
-              {%- endif -%}
-            {%- when 'complementary' -%}
+              {%- endif -%} {% endcomment %}
+            {% comment %} {%- when 'complementary' -%}
               <product-recommendations class="complementary-products quick-add-hidden no-js-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
                 {%- if recommendations.performed and recommendations.products_count > 0 -%}
                   <aside aria-label="{{ 'accessibility.complementary_products' | t }}" {{ block.shopify_attributes }}{% if block.settings.make_collapsible_row %} class="product__accordion accordion"{% endif %}>
@@ -558,8 +559,8 @@
                   <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
                   <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
                 {%- endif -%}
-              </product-recommendations>
-            {%- when 'icon-with-text' -%}
+              </product-recommendations> {% endcomment %}
+            {% comment %} {%- when 'icon-with-text' -%}
               {%- liquid
                 assign heading1Empty = false
                 assign heading2Empty = false
@@ -653,7 +654,7 @@
                     </span>
                   </li>
                 {%- endunless -%}
-              </ul>
+              </ul> {% endcomment %}
           {%- endcase -%}
         {%- endfor -%}
         {% comment %} <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -663,21 +664,23 @@
       </div>
 
     </div>
+    {%- if product.metafields.custom.what != blank or product.metafields.custom.how_when_why != blank -%}
 
-    <div class="product-info-extra">
-      <div>
-        {%- if product.metafields.custom.what != blank -%}
-            <h3>What</h3>
-            <p>{{ product.metafields.custom.what }}</p>
-        {%- endif %}
-      </div>
-      <div>
-        {%- if product.metafields.custom.how_when_why != blank -%}
-          <h3>How / When / Why</h3>
-            <p>{{ product.metafields.custom.how_when_why }}</p>
-        {%- endif %}
-      </div>
-    </div> 
+      <div class="product-info-extra">
+        <div>
+          {%- if product.metafields.custom.what != blank -%}
+              <h3>What</h3>
+              <p>{{ product.metafields.custom.what }}</p>
+          {%- endif %}
+        </div>
+        <div>
+          {%- if product.metafields.custom.how_when_why != blank -%}
+            <h3>How / When / Why</h3>
+              <p>{{ product.metafields.custom.how_when_why }}</p>
+          {%- endif %}
+        </div>
+      </div> 
+    {%- endif %}
 
     <div class="product-image-metafield">
       {%- if product.metafields.custom.image != blank -%}
