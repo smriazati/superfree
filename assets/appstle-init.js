@@ -24,7 +24,7 @@
       RS.Config = {
         "selectors": {
             "payment_button_selectors": "form[action$='/cart/add'] .shopify-payment-button",
-            "subscriptionLinkSelector": "#MainContent > div > div:nth-child(2) > div:nth-child(2) > h2",
+            "subscriptionLinkSelector": "",
             "atcButtonPlacement": "BEFORE",
             "subscriptionLinkPlacement": "BEFORE",
             "cartRowSelector": "",
@@ -37,7 +37,7 @@
         },
         "enableCartWidgetFeature": "false",
         "useUrlWithCustomerId": "true",
-        "atcButtonSelector": "div.product-form__buttons",
+        "atcButtonSelector": ".product-form__buttons",
         "moneyFormat": "{% raw %}${{amount}}{% endraw %}",
         "oneTimePurchaseText": "One Time Purchase",
         "shop": "superfree-food.myshopify.com",
@@ -298,7 +298,7 @@
             },
             "customCSS": "",
             "customerPortalCss": "",
-            "priceSelector": "span.price-item.price-item--regular",
+            "priceSelector": "",
             "landingPagePriceSelector": "",
             "quickViewClickSelector": "",
             "badgeTop": "",
