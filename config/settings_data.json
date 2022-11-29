@@ -6,9 +6,8 @@
       "header": {
         "type": "header",
         "settings": {
-          "shopMenu": "shop-menu",
           "menu": "main-menu",
-          "menu-mobile": "main-menu"
+          "menu-mobile": "main-menu-mobile"
         }
       },
       "footer": {

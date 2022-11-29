@@ -1,8 +1,8 @@
 {{ 'section-header.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'section-header.js' | asset_url }}" defer="defer"></script>
 
-<link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+{% comment %} <link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'"> {% endcomment %}
 
 {%- if settings.cart_type == "drawer" -%}
   {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
@@ -16,7 +16,7 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
-<script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+{% comment %} <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 {%- if settings.cart_type == "drawer" -%}
   <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
@@ -26,15 +26,26 @@
     <div class="header-drawer">
       <div id="menu-drawer" tabindex="-1" class="header-drawer-wrapper">
         <nav class="nav-shop">
-          {% if section.settings.shopMenu != blank %}
-            <ul class="big-links plain">
-              {% for link in section.settings.shopMenu.links -%}
-                <li>
-                  {{ link.title | link_to: link.url }}
-                </li>
-              {%- endfor %}
-            </ul>
-          {% endif %}
+          <ul class="big-links plain">
+            <li>
+              <a href="/shop">
+                <div class="text-wrapper">
+                  <span>Shop</span>
+                  <span>Online</span>
+                  <span>(US)</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/local">
+                <div class="text-wrapper">
+                  <span>Order</span>
+                  <span>Local</span>
+                  <span>(NC)</span>
+                </div>
+              </a>
+            </li>
+          </ul>
         </nav>
         <nav class="nav-site-desktop">
           <ul role="list" class="plain">
@@ -64,8 +75,13 @@
     <div class="header-grid">
       <div class="header-left">
         <button class="menu-toggle link-hover" aria-label="{{ 'sections.header.menu' | t }}" id="menuToggle">
-          <span>
-            Menu
+          <span class="menu-toggle-desktop">
+            <span class="collapsed">Menu</span>
+            <span class="expanded">Close</span>
+          </span>
+          <span class="menu-toggle-mobile">
+            <span class="collapsed">+</span>
+            <span class="expanded">Close</span>
           </span>
         </button>
       </div>
@@ -95,7 +111,12 @@
       </div>
       <div class="header-right"> 
         <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-          <span>Basket</span>
+          <span class="cart-toggle-desktop">
+            Basket
+          </span>
+          <span class="cart-toggle-mobile">
+            
+          </span>
           {%- if cart != empty -%}
             <div class="cart-count-bubble">
               {%- if cart.item_count < 100 -%}
@@ -155,12 +176,6 @@
   "name": "t:sections.header.name",
   "class": "section-header",
   "settings": [
-    {
-      "type": "link_list",
-      "id": "shopMenu",
-      "default": "main-menu",
-      "label": "Shop menu"
-    },
     {
       "type": "link_list",
       "id": "menu",

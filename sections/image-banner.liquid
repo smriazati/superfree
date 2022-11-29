@@ -22,7 +22,9 @@
     <h2{{ section.shopify_attributes }}>
       <span>{{ section.settings.heading | escape }}</span>
     </h2>
+  </div>
 
+  <div class="button-wrapper">
     <div {{ section.shopify_attributes }}>
       {%- if section.settings.button != blank -%}
         <a href="/collections/shop" class="btn btn-circle btn-glow"><span>{{ section.settings.button | escape }}</span></a>

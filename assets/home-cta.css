@@ -2,6 +2,7 @@
     height: 538px;
     margin-top: 24px;
     margin-bottom: 24px;
+    overflow: hidden;
 }
 
 .home-cta a {
@@ -10,6 +11,9 @@
     display: grid;
     grid-template: 1fr / 1fr;
     align-items: start;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .home-cta a .image-wrapper,
@@ -27,6 +31,14 @@
     justify-content: center;
 }
 
+@media (max-width: 1392px) {
+    .home-cta a .text-wrapper {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+
 .home-cta a .text-wrapper h2 {
     place-self: center;
     font-size: 48px;
@@ -36,4 +48,12 @@
     text-transform: uppercase;
     color: var(--white);
     text-align: center;
+    word-break: break-all;
+}
+
+@media (max-width: 998px) {
+    .home-cta a .text-wrapper h2 {
+        font-size: 36px;
+        line-height: 54px;
+    }
 }

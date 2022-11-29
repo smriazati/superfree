@@ -57,13 +57,13 @@ header.header {
 
 
 .header-drawer {
-    z-index: 1;
+    z-index: 111;
     position: absolute;
     width: 100%;
 }
 
 .header-grid {
-    z-index: 2;
+    z-index: 112;
     position: relative;
 }
 
@@ -105,21 +105,25 @@ header:not(.collapsed) .header-drawer {
 }
 
 .header-drawer .nav-shop {
-    flex: 66%;
+    flex: 75%;
 }
 
 .header-drawer .nav-site-desktop {
-    flex: 33%;
+    flex: 25%;
 }
 
-.header-drawer .nav-site-mobile {
-    display: none;
+@media (min-width: 998px) {
+    .header-drawer .nav-site-desktop {
+        padding-left: 56px;
+    }
 }
+
 
 .header-drawer {
     background-image: url('./logo.png');
     background-position: center 114%;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .nav-site-desktop li a {
@@ -140,7 +144,6 @@ header:not(.collapsed) .header-drawer {
 
 @media (max-width: 1392px) {
 
-    .header-drawer-wrapper,
     .header-grid {
         width: calc(100% - 48px);
         margin-left: 24px;
@@ -150,4 +153,184 @@ header:not(.collapsed) .header-drawer {
 
 .cart-count-bubble {
     display: none !important;
+}
+
+header ul.big-links li {
+    position: relative;
+    flex: 50%;
+}
+
+
+header ul.big-links li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 100%;
+}
+
+header ul.big-links li a .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* mobile menu */
+.nav-site-mobile,
+.cart-toggle-mobile,
+.menu-toggle-mobile {
+    display: none;
+}
+
+@media (min-width: 640px) and (max-width: 998px) {
+    ul.big-links {
+        flex-direction: row;
+        margin-bottom: 24px;
+    }
+
+    ul.big-links li:not(:last-child) {
+        margin-right: 24px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 998px) {
+    header .nav-site-desktop {
+        padding-left: 24px;
+    }
+}
+
+@media (min-width: 640px) {
+
+    header:not(.collapsed) .menu-toggle-desktop span.collapsed,
+    header.collapsed .menu-toggle-desktop span.expanded {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .nav-site-desktop,
+    .cart-toggle-desktop,
+    .menu-toggle-desktop {
+        display: none;
+    }
+
+    .nav-site-mobile,
+    .cart-toggle-mobile,
+    .menu-toggle-mobile {
+        display: flex;
+    }
+
+    header.collapsed .header-drawer {
+        transform: translateY(-100vh)
+    }
+
+    header:not(.collapsed) .menu-toggle-mobile span.collapsed,
+    header.collapsed .menu-toggle-mobile span.expanded {
+        display: none;
+    }
+
+    header .header-drawer {
+        transform: translateY(0vh);
+    }
+
+    .cart-toggle-mobile {
+        content: "";
+        background-image: url('./cart.svg');
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        display: flex;
+    }
+
+    /* .header-drawer,
+    header:not(.collapsed) .header-grid {
+        position: fixed;
+    }
+
+    .header-drawer {
+        height: 100vh;
+        overflow-y: scroll;
+    } */
+
+    .header-drawer-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+
+    .nav-site-mobile ul {
+        padding-bottom: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nav-site-mobile ul a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-transform: uppercase;
+    }
+
+    header ul.big-links li {
+        flex: calc(100vw - 48px);
+    }
+
+    .nav-site-mobile {
+        padding-top: 24px;
+    }
+
+    header.collapsed .header-drawer {
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .nav-site-mobile,
+    .nav-shop {
+        background: var(--black);
+    }
+
+    .nav-shop {
+        padding: 0 24px;
+    }
+
+    .nav-site-mobile {
+        padding: 24px;
+        padding-bottom: 0;
+    }
+
+    .header-grid button span,
+    .header-grid a span {
+        font-size: 16px;
+    }
+
+    .header-drawer {
+        padding-top: 80px;
+        min-height: 100vh;
+    }
+
+    .nav-shop {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-grid {
+        transition: .3s ease all;
+    }
+
+    header:not(.collapsed) .header-grid {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

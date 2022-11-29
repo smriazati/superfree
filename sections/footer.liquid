@@ -100,6 +100,7 @@
     {%- endif -%}
   </div>
   <div class="footer-logo">
+    <div class="image-wrapper">
     {%- if settings.logo != blank -%}
       {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
       {%- assign logo_height = 274 -%}
@@ -111,6 +112,7 @@
         alt: logo_alt
       }}
     {%- endif -%}
+    </div>
   </div>
   </div>
 </footer>
