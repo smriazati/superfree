@@ -876,6 +876,7 @@ li[data-address]>h2 {
   line-height: 58px;
   letter-spacing: 0em;
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 
 .customer>h1+a {
@@ -888,6 +889,7 @@ li[data-address]>h2 {
   font-weight: 400;
   line-height: 58px;
   letter-spacing: 0em;
+  text-transform: uppercase;
 }
 
 .addresses ul p {
@@ -899,4 +901,12 @@ li[data-address]>h2 {
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0em;
+}
+
+:is(.account, .order) h2 {
+  text-transform: lowercase;
+}
+
+.addresses-wrapper {
+  margin-top: 24px;
 }
