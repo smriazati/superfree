@@ -840,6 +840,7 @@ li[data-address]>h2 {
   line-height: 32px;
   letter-spacing: 0em;
   text-transform: uppercase;
+  justify-content: center;
 }
 
 .customer .form__message+ul {
@@ -855,4 +856,47 @@ li[data-address]>h2 {
   flex-direction: column;
   justify-content: center;
   font-size: 18px;
+  line-height: 18px;
+}
+
+.customer .form__message+ul li a {
+  text-decoration: underline;
+}
+
+.activate button[name=decline],
+.addresses li>button,
+.addresses form button[type] {
+  color: var(--white);
+}
+
+.customer>h1,
+.customer__title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0em;
+  margin-bottom: 24px;
+}
+
+.customer>h1+a {
+  margin-bottom: 24px;
+}
+
+li[data-address]>h2 {
+  margin-bottom: 24px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0em;
+}
+
+.addresses ul p {
+  margin: 24px 0;
+}
+
+:is(.account, .order) p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
 }
