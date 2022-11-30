@@ -90,20 +90,7 @@
           <h1 class="header__heading">
         {%- endif -%}
             <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-              {%- if settings.logo != blank -%}
-                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = 24 -%}
-                {%- assign logo_width = 126 -%}
-                {{ settings.logo | image_url: width: 126 | image_tag:
-                  class: 'header__heading-logo',
-                  widths: '126, 252',
-                  height: logo_height,
-                  width: logo_width,
-                  alt: logo_alt
-                }}
-              {%- else -%}
-                <span class="h2">{{ shop.name }}</span>
-              {%- endif -%}
+              <img src="https://cdn.shopify.com/s/files/1/0640/6776/4452/files/logo.svg?v=1669833377" alt="superfree logo" width="126" height="24">
             </a>
         {%- if request.page_type == 'index' -%}
           </h1>

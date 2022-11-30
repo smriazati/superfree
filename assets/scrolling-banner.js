@@ -7,12 +7,12 @@ function setTickerAnimation() {
     }
     let tickerTextWidth = span.offsetWidth;
     let windowWidth = window.innerWidth;
-    let speed;
-    if (windowWidth > 768) {
-        speed = 30;
-    } else {
-        speed = 15;
-    }
+    let speed = 60;
+    // if (windowWidth > 768) {
+    //     speed = 30;
+    // } else {
+    //     speed = 15;
+    // }
     gsap.set(ref, {
         x: windowWidth,
     });
