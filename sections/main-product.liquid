@@ -663,7 +663,7 @@
       </div>
 
     </div>
-
+{%- if product.metafields.custom.what != blank or product.metafields.custom.how_when_why -%}
     <div class="product-info-extra">
       <div>
         {%- if product.metafields.custom.what != blank -%}
@@ -678,6 +678,7 @@
         {%- endif %}
       </div>
     </div> 
+{%- endif %}
 
     <div class="product-image-metafield">
       {%- if product.metafields.custom.image != blank -%}
