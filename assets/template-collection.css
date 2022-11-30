@@ -149,7 +149,7 @@
   overflow: hidden;
 }
 
-.collection.shop .card__media .media img:first-child {
+.collection.shop .card__media .media img {
   object-fit: contain;
   padding: 75px;
 }
