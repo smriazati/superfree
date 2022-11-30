@@ -195,7 +195,6 @@ ul.big-links li a {
     display: flex;
     border: 1px solid var(--white);
     /* word-spacing: 100vw; */
-    border-radius: 1%;
     transition: .3s ease all;
 }
 

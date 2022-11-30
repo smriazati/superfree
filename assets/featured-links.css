@@ -10,8 +10,67 @@
 
 
 
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(30deg);
+    }
 
-.home-featured-links ul.big-links li a {
+    80% {
+        transform: translateX(-100%) translateY(-100%) rotate(30deg);
+    }
+
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(30deg);
+    }
+}
+
+ul.big-links li.box--gradient a {
+    border: none;
+    display: flex;
+    border-radius: 1%;
+    transition: .3s ease all;
+}
+
+ul.big-links li.box--gradient a:hover {
+    border-radius: 0;
+}
+
+
+ul.big-links li.box--gradient {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px 8px rgba(96, 96, 96, 0.5);
+    transition: .3s ease all;
+}
+
+ul.big-links li.box--gradient:hover {
+    border-radius: 50%;
+}
+
+.box--gradient:after {
+    content: '';
+    top: 0;
+    transform: translateX(100%) rotate(30deg);
+    width: 300%;
+    height: 300%;
+    position: absolute;
+    z-index: 1;
+    animation: shine 3s infinite ease-in;
+
+    background:
+        linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.8) 50%,
+            rgba(128, 186, 232, 0) 99%,
+            rgba(128, 186, 232, 0) 100%);
+}
+
+.box--gradient.silver {
+    background: linear-gradient(180deg, #000000 3.28%, #191919 5.87%, #343434 11.57%, #1F1F1F 14.51%, #000000 22.44%, #191919 78.24%, #000000 98.1%);
+}
+
+
+/* .home-featured-links ul.big-links li a {
     background: var(--white);
     color: var(--black);
-}
+} */

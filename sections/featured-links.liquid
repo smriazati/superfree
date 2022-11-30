@@ -4,7 +4,7 @@
     {% if section.settings.menu != blank %}
       <ul class="big-links plain">
         {% for link in section.settings.menu.links -%}
-          <li>
+          <li class="box--gradient silver">
             {{ link.title | link_to: link.url }}
           </li>
         {%- endfor %}
