@@ -32,6 +32,7 @@ button {
     padding: 16px;
     background: var(--black);
     background: linear-gradient(270deg, var(--black) -16.44%, var(--black) 1.82%, var(--black) 49.78%, var(--black) 102.78%);
+    background-size: 100vw 100vw;
     color: var(--white);
     transition: .3s ease all;
     font-size: 14px;
@@ -42,12 +43,21 @@ button {
     text-transform: uppercase;
 }
 
-.button--secondary:hover,
+.btn-rainbow:before {
+    content: '';
+    background: linear-gradient(270deg, var(--black) -16.44%, var(--black) 1.82%, var(--black) 49.78%, var(--black) 102.78%);
+    /* background-position-x: 100vw; */
+    transition: .3s ease all;
+}
+
 .btn-rainbow:hover {
-    background: linear-gradient(270deg, var(--black) -16.44%, var(--rose) 1.82%, #FBD786 49.78%, #C6FFDD 102.78%);
-    background-size: 100vw 100vw;
-    animation: 'slide' 3s infinite linear forwards;
-    animation-duration: 3.5s;
+    background: transparent;
+    color: var(--black);
+}
+
+.btn-rainbow:hover:before {
+    background-position-x: 0;
+    background: linear-gradient(270deg, var(--rose) -16.44%, var(--rose) 1.82%, #FBD786 49.78%, #C6FFDD 102.78%);
 }
 
 
