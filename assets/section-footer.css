@@ -2,6 +2,8 @@ footer.footer {
   background: var(--black);
   color: var(--white);
   padding-top: 68px;
+  z-index: 13;
+  position: relative;
 }
 
 .footer-grid {

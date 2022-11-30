@@ -172,3 +172,15 @@
   height: 0;
   overflow: hidden;
 }
+
+/* btn fixed */
+.product-btn-fixed {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 12;
+}
+
+.btn-chrome {
+  background: linear-gradient(212.41deg, #939393 33.12%, #D9D9D9 87.18%);
+}
