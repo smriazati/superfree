@@ -28,6 +28,12 @@
           "settings": {
           }
         },
+        "e0d66f31-3685-453b-b577-d254d80f3575": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
         "947a3115-e477-4650-8b4c-326df7d43ab1": {
           "type": "buy_buttons",
           "settings": {
@@ -41,6 +47,7 @@
         "34d1b107-72c6-42e7-8072-bf5ccab0fa5f",
         "2b0a79c0-5dc2-48cb-aab4-8982522c3e5a",
         "aa7def3f-3366-4f3c-87aa-cce8fd49b7a4",
+        "e0d66f31-3685-453b-b577-d254d80f3575",
         "947a3115-e477-4650-8b4c-326df7d43ab1"
       ],
       "settings": {
