@@ -318,10 +318,16 @@ ul.big-links li a:hover {
     text-transform: uppercase;
 }
 
+/* login */
 .shopify-challenge__container>*:not(:last-child) {
     margin-bottom: 24px;
 }
 
 .shopify-challenge__container .shopify-challenge__button {
     margin-top: 24px;
+}
+
+/* cart */
+.cart-item__error {
+    display: none;
 }
