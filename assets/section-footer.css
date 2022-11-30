@@ -79,12 +79,10 @@ footer.footer {
   width: 100%;
 }
 
-.footer-navs .footer-nav-block>* {
-  margin-bottom: 24px;
-}
 
 .footer-navs .footer-nav-block>*:not(:last-child) {
   margin-right: 65px;
+  margin-bottom: 24px;
 }
 
 .footer-navs .footer-nav-block .muted-menu li {
@@ -108,7 +106,9 @@ footer.footer {
   display: flex;
 }
 
-
+.footer-news .field {
+  display: flex;
+}
 
 .footer-news h2 {
   font-family: var(--mono-serif);

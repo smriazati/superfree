@@ -60,3 +60,10 @@
     max-height: 100%;
     object-fit: cover;
 }
+
+@media (max-width: 998px) {
+    .home-featured-collections .product-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+}

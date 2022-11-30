@@ -22,6 +22,8 @@ button {
     }
 }
 
+.shopify-challenge__button,
+.customer button,
 .button--secondary,
 .btn-rainbow {
     border: 0;
@@ -305,4 +307,21 @@ ul.big-links li a:hover {
 
 .agp__disclaimer {
     display: none !important;
+}
+
+/* type */
+.title-style {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+}
+
+.shopify-challenge__container>*:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.shopify-challenge__container .shopify-challenge__button {
+    margin-top: 24px;
 }

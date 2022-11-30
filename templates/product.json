@@ -18,12 +18,6 @@
           "settings": {
           }
         },
-        "2ee0026c-2fc2-4d1c-bc2d-72997193f801": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "dropdown"
-          }
-        },
         "2b0a79c0-5dc2-48cb-aab4-8982522c3e5a": {
           "type": "shopify:\/\/apps\/appstle-subscriptions\/blocks\/appstle-subscription-product-page-widget\/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
           "settings": {
@@ -45,7 +39,6 @@
         "7b74ea3a-c660-4762-99ef-9b931aea5e43",
         "0ae9ca77-c074-4080-9aab-b13893312d16",
         "34d1b107-72c6-42e7-8072-bf5ccab0fa5f",
-        "2ee0026c-2fc2-4d1c-bc2d-72997193f801",
         "2b0a79c0-5dc2-48cb-aab4-8982522c3e5a",
         "aa7def3f-3366-4f3c-87aa-cce8fd49b7a4",
         "947a3115-e477-4650-8b4c-326df7d43ab1"
