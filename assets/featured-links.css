@@ -43,9 +43,6 @@ ul.big-links li.box--gradient {
     transition: .3s ease all;
 }
 
-ul.big-links li.box--gradient:hover {
-    border-radius: 50%;
-}
 
 .box--gradient:after {
     content: '';
@@ -56,13 +53,17 @@ ul.big-links li.box--gradient:hover {
     position: absolute;
     z-index: 1;
     animation: shine 3s infinite ease-in;
-
     background:
         linear-gradient(to right,
             rgba(255, 255, 255, 0) 0%,
             rgba(255, 255, 255, 0.8) 50%,
             rgba(128, 186, 232, 0) 99%,
             rgba(128, 186, 232, 0) 100%);
+}
+
+
+ul.big-links li.box--gradient:hover {
+    border-radius: 50%;
 }
 
 .box--gradient.silver {

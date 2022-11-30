@@ -118,7 +118,8 @@
 /* appstle styles */
 #appstle_subscription_widget0 {
   max-width: 100%;
-  padding: 0 24px;
+  padding: 0;
+  margin-top: 56px;
 }
 
 .appstle_sub_widget {
@@ -140,6 +141,7 @@
 #appstle_subscription_widget0 .appstle_subscription_wrapper {
   border-color: var(--black);
   border-width: 2px;
+  border-radius: 0;
 }
 
 .appstle_subscription_amount,
