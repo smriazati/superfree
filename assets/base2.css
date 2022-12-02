@@ -341,3 +341,25 @@ ul.big-links li a:hover {
 .cart-item__error {
     display: none;
 }
+
+
+/* inputs */
+.field__input {
+    border: 2px solid var(--black);
+    padding: 16px;
+    height: auto;
+}
+
+.field__input,
+.field__input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.field__input::placeholder {
+    opacity: 0.8;
+}

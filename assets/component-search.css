@@ -1,6 +1,6 @@
-.search__input.field__input {
+/* .search__input.field__input {
   padding-right: 5rem;
-}
+} */
 
 .search__button {
   right: var(--inputs-border-width);
@@ -17,7 +17,7 @@
   z-index: 2;
 }
 
-.search__button:not(:focus-visible):not(.focused){
+.search__button:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
   background-color: inherit;
 }
@@ -30,4 +30,52 @@
 /* Remove extra spacing for search inputs in Safari */
 input::-webkit-search-decoration {
   -webkit-appearance: none;
+}
+
+
+/* custom */
+.template-search {
+  min-height: 72vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 24px;
+}
+
+.template-search>* {
+  grid-column: 2 / 8;
+}
+
+.template-search .title {
+  margin-bottom: 60px;
+}
+
+.template-search form .field {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+}
+
+.template-search .status {
+  margin-top: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.template-search>.search-results {
+  grid-column: 1 / 9;
+  margin-top: 60px;
+}
+
+.template-search .search-results .product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+}
+
+.template-search .search-results .product-grid .card .media img {
+  padding: 75px;
 }
