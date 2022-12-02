@@ -50,12 +50,12 @@ button {
     transition: .3s ease all;
 }
 
-.btn-rainbow:hover {
+.btn-rainbow:not(:disabled):hover {
     background: transparent;
     color: var(--black);
 }
 
-.btn-rainbow:hover:before {
+.btn-rainbow:not(:disabled):hover:before {
     background-position-x: 0;
     background: linear-gradient(270deg, var(--rose) -16.44%, var(--rose) 1.82%, #FBD786 49.78%, #C6FFDD 102.78%);
 }
@@ -387,4 +387,10 @@ ul.big-links li a:hover {
     background: linear-gradient(124deg, #FCF4C9, #FFE7E7, #FBCDF2, #E8BEFA, #A6EFFF, #BDFD8B);
     background-size: 1800% 1800% !important;
     animation: rainbowBg 18s ease infinite;
+}
+
+
+/* custom */
+.image-with-text {
+    margin-top: 0;
 }
