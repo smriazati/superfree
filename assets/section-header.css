@@ -29,6 +29,12 @@ header.header {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    transition: .3s ease all;
+}
+
+.header-center a:hover {
+    opacity: 0.5;
 }
 
 .header-right {

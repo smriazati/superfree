@@ -198,3 +198,20 @@
   text-transform: uppercase;
   color: var(--silver);
 }
+
+.page-collection .button-wrapper {
+  width: 80%;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-collection .button-wrapper a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
