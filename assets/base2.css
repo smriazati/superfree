@@ -282,6 +282,7 @@ ul.big-links li a:hover {
     background-color: var(--rose) !important;
 }
 
+
 .agp__heading {
     font-size: 48px !important;
     font-weight: 300 !important;
@@ -362,4 +363,71 @@ ul.big-links li a:hover {
 
 .field__input::placeholder {
     opacity: 0.8;
+}
+
+/* rainbow bg */
+/* rainbow effect */
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+.agp__background {
+    background: linear-gradient(124deg, #FCF4C9, #FFE7E7, #FBCDF2, #E8BEFA, #A6EFFF, #BDFD8B);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
 }
