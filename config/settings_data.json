@@ -1,6 +1,5 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Superfree-PrimaryLogo-white-transparent_1.png",
     "cart_type": "drawer",
     "checkout_header_image": "shopify:\/\/shop_images\/plant-based.jpg",
     "checkout_logo_image": "shopify:\/\/shop_images\/Superfree-PrimaryLogo-white-transparent_1.png",
@@ -12,6 +11,7 @@
     "checkout_accent_color": "#111313",
     "checkout_button_color": "#111313",
     "checkout_error_color": "#ffe7e7",
+    "logo": "shopify:\/\/shop_images\/Superfree-PrimaryLogo-white-transparent_1.png",
     "sections": {
       "header": {
         "type": "header",
