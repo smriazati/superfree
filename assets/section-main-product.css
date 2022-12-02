@@ -184,3 +184,31 @@
 .btn-chrome {
   background: linear-gradient(212.41deg, #939393 33.12%, #D9D9D9 87.18%);
 }
+
+.product-variant-dropdown {
+  height: unset;
+  margin-top: 24px;
+}
+
+.product-variant-dropdown select {
+  font-size: 16px;
+  line-height: 16px;
+  padding-left: 28px;
+  border: 2px solid var(--black);
+}
+
+.product-variant-dropdown>.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 28px;
+}
+
+.product-variant-dropdown .select .icon-caret {
+  left: unset;
+  right: 28px;
+}
