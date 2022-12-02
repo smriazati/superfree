@@ -382,8 +382,9 @@ ul.big-links li a:hover {
     }
 }
 
+.template-404,
 .agp__background {
     background: linear-gradient(124deg, #FCF4C9, #FFE7E7, #FBCDF2, #E8BEFA, #A6EFFF, #BDFD8B);
-    background-size: 1800% 1800%;
+    background-size: 1800% 1800% !important;
     animation: rainbowBg 18s ease infinite;
 }
