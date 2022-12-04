@@ -213,7 +213,7 @@
   right: 28px;
 }
 
-.product.main-product .grid {
+.product.main-product.grid {
   display: flex;
   flex-direction: column;
 }
