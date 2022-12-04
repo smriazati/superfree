@@ -9,6 +9,7 @@
     flex: 2;
     background: var(--black);
     color: var(--white);
+    overflow: hidden;
 }
 
 .page-about .rte h2 {
@@ -22,6 +23,12 @@
     margin-bottom: 62px;
 }
 
+@media (max-width: 998px) {
+  .page-about .rte h2 {
+      font-size: 80px;
+      line-height: 88px;
+  }
+}
 .page-about .rte h3 {
     font-size: 24px;
     font-weight: 400;
@@ -47,6 +54,14 @@
     max-width: 330px;
     margin-left: auto;
     margin-right: auto;
+}
+@media (max-width: 330px) {
+
+  .page-about p,
+  .page-about h3 {
+      padding-left: 24px;
+      padding-right: 24px;
+  }
 }
 {%endstyle%}
 <div class="page-about">

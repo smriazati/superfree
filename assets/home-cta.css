@@ -57,5 +57,7 @@
     .home-cta a .text-wrapper h2 {
         font-size: 36px;
         line-height: 54px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }

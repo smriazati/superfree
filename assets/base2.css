@@ -31,7 +31,8 @@ button {
     outline: 0;
     padding: 16px;
     background: var(--black);
-    background: linear-gradient(270deg, var(--black) -16.44%, var(--black) 1.82%, var(--black) 49.78%, var(--black) 102.78%);
+    background: linear-gradient(90deg, var(--black) 2.1%, var(--black) 18.55%, var(--black) 36.71%, var(--black) 58.13%, var(--black) 78.01%, var(--black) 98.66%);
+    ;
     background-size: 100vw 100vw;
     color: var(--white);
     transition: .3s ease all;
@@ -45,8 +46,8 @@ button {
 
 .btn-rainbow:before {
     content: '';
-    background: linear-gradient(270deg, var(--black) -16.44%, var(--black) 1.82%, var(--black) 49.78%, var(--black) 102.78%);
-    /* background-position-x: 100vw; */
+    background: linear-gradient(90deg, #FCF4C9 2.1%, #FFE7E7 18.55%, #FBCDF2 36.71%, #E8BEFA 58.13%, #A6EFFF 78.01%, #BDFD8B 98.66%);
+    ;
     transition: .3s ease all;
 }
 
@@ -81,6 +82,8 @@ body {
 
 .page-width {
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 1392px) {
@@ -139,7 +142,15 @@ body {
 }
 
 .link-underline {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 6px;
+    transition: .3s ease all;
+}
+
+.link-underline:hover {
+    text-decoration-style: wavy;
 }
 
 .link-underline,
@@ -150,6 +161,50 @@ body {
     line-height: 27px;
     text-transform: uppercase;
     letter-spacing: 0em;
+}
+
+
+.link-underline {
+    padding-bottom: 15px;
+    background: url("./wave.svg");
+    background-repeat: repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    background-repeat: repeat-x;
+    background-size: 15px 5px;
+    background-position: 2px 28px;
+    animation: move 15s linear infinite;
+    -webkit-animation: move 15s linear infinite;
+    animation-play-state: paused;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.link-underline:hover {
+    animation-play-state: running;
+}
+
+
+@-webkit-keyframes move {
+    from {
+        background-position: 2px 28px;
+    }
+
+    to {
+        background-position: 500px 28px;
+    }
+}
+
+@keyframes move {
+    from {
+        background-position: 2px 28px;
+    }
+
+    to {
+        background-position: 500px 28px;
+    }
 }
 
 /* big links */
@@ -387,4 +442,9 @@ ul.big-links li a:hover {
     background: linear-gradient(124deg, #FCF4C9, #FFE7E7, #FBCDF2, #E8BEFA, #A6EFFF, #BDFD8B);
     background-size: 1800% 1800% !important;
     animation: rainbowBg 18s ease infinite;
+}
+
+
+.page-contact .page-title {
+    display: none;
 }

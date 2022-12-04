@@ -124,7 +124,7 @@ header:not(.collapsed) .header-drawer {
 
 
 .header-drawer {
-    background-image: url('./logo.png');
+    background-image: url('./logo.svg');
     background-position: center 114%;
     background-repeat: no-repeat;
     background-size: contain;

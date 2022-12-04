@@ -25,6 +25,13 @@
   margin-right: auto;
 }
 
+@media (max-width: 998px) {
+  .section-main-page .rte {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 .section-main-page .rte p+p {
   margin-bottom: 24px;
 }

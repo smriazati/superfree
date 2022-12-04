@@ -18,9 +18,15 @@
   assign search_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
 -%}
 
-<div class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding page-width center">
+<div class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding page-margin page-width center">
   <div class="template-search__header page-width center">
-    <h1 class="title">What are you looking for?</h1>
+    {%- if search.performed -%}
+      <h1 class="title">Search results</h1>
+
+      {%-else -%}
+      <h1 class="title">What are you looking for?</h1>
+    {%- endif -%}
+
     <div class="template-search__search">
       {%- if settings.predictive_search_enabled -%}
         <predictive-search data-loading-text="{{ 'accessibility.loading' | t }}">
@@ -62,7 +68,7 @@
               <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
             {%- endif -%}
 
-            <button type="submit" class="button--secondary search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+            <button type="submit" class="button button--secondary btn-rainbow" aria-label="{{ 'general.search.search' | t }}">
               <span>Go</span>
             </button>
           </div>
@@ -159,45 +165,9 @@
                   {%- endif -%}
 
                   <li class="grid__item">
-                    {%- case item.object_type -%}
-                      {%- when 'product' -%}
-                        {%- capture product_settings -%}{%- if section.settings.product_show_vendor -%}vendor,{%- endif -%}title,price{%- endcapture -%}
-                        {% render 'card-product',
-                          card_product: item,
-                          media_aspect_ratio: section.settings.image_ratio,
-                          show_secondary_image: section.settings.show_secondary_image,
-                          show_vendor: section.settings.show_vendor,
-                          show_rating: section.settings.show_rating,
-                          lazy_load: lazy_load
-                        %}
-                      {%- when 'article' -%}
-                        {% render 'article-card',
-                          article: item,
-                          show_image: true,
-                          show_date: section.settings.article_show_date,
-                          show_author: section.settings.article_show_author,
-                          show_badge: true,
-                          media_aspect_ratio: 1,
-                          lazy_load: lazy_load
-                        %}
-                      {%- when 'page' -%}
-                        <div class="article-card-wrapper card-wrapper underline-links-hover">
-                          <div class="card card--card card--text ratio color-{{ settings.blog_card_color_scheme }}" style="--ratio-percent: 100%;">
-                            <div class="card__content">
-                              <div class="card__information">
-                                <h3 class="card__heading">
-                                  <a href="{{ item.url }}" class="full-unstyled-link">
-                                    {{ item.title | truncate: 50 | escape }}
-                                  </a>
-                                </h3>
-                              </div>
-                              <div class="card__badge {{ settings.badge_position }}">
-                                <span class="badge color-background-1">{{ 'templates.search.page' | t }}</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    {%- endcase -%}
+                    <a href="{{ item.url }}">
+                      {{ item.title | truncate: 50 | escape }}
+                    </a>
                   </li>
                 {%- endfor -%}
               </ul>

@@ -395,13 +395,14 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   background: var(--white);
 }
 
+/* 
 .drawer__heading {
   padding-left: 24px;
-}
-
+} */
+/* 
 .drawer__close {
   padding-right: 24px;
-}
+} */
 
 .drawer__header {
   padding-bottom: 18px;
