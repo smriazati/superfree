@@ -31,8 +31,8 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
-        "collection": "all"
+        "title": "featured",
+        "collection": "shop"
       }
     }
   },
