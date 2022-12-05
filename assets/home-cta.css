@@ -24,6 +24,11 @@
     grid-row: 1 / 1;
 }
 
+.home-cta a .image-wrapper img {
+    height: auto;
+    width: auto;
+}
+
 .home-cta a .text-wrapper {
     display: flex;
     padding-left: 24px;
