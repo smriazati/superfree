@@ -61,6 +61,9 @@ button {
     background: linear-gradient(270deg, var(--rose) -16.44%, var(--rose) 1.82%, #FBD786 49.78%, #C6FFDD 102.78%);
 }
 
+.btn-rainbow:not(:hover) span {
+    color: var(--white);
+}
 
 a {
     text-decoration: none;
@@ -80,10 +83,24 @@ body {
     background: var(--silver);
 }
 
+.full-page-width {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1392px) {
+    .full-page-width {
+        max-width: 100%;
+    }
+}
+
 .page-width {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 @media (max-width: 1392px) {
@@ -447,4 +464,8 @@ ul.big-links li a:hover {
 
 .page-contact .page-title {
     display: none;
+}
+
+.cart-container {
+    padding: 24px;
 }

@@ -85,7 +85,7 @@
 .page-collection .product-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 24px;
+  grid-gap: 24px;
   text-align: center;
   margin: 52px 0;
 }

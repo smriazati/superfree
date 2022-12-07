@@ -27,6 +27,7 @@
 .home-cta a .image-wrapper img {
     height: auto;
     width: auto;
+    min-height: 100%;
 }
 
 .home-cta a .text-wrapper {

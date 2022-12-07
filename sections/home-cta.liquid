@@ -1,6 +1,6 @@
 {{ 'home-cta.css' | asset_url | stylesheet_tag }}
 
-<div class="home-cta page-width">
+<div class="home-cta full-page-width">
     {%- if section.settings.link != blank -%}
         <a href="{{ section.settings.link }}" {% if section.settings.isNewTab %}target="_blank" {% endif %}>
     {%- endif -%}
