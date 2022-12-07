@@ -226,6 +226,27 @@ body {
 
 /* big links */
 
+ul.big-links li {
+    position: relative;
+    flex: 50%;
+}
+
+
+ul.big-links li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 100%;
+}
+
+ul.big-links li a .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 ul.big-links {
     display: flex;
 }

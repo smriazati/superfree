@@ -2,6 +2,14 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%style%}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .page-about {
     padding-top: 144px;
     padding-bottom: 200px;
@@ -10,7 +18,9 @@
     background: var(--black);
     color: var(--white);
     overflow: hidden;
+
 }
+
 
 .page-about .rte h2 {
     max-width: 100%;
@@ -21,6 +31,21 @@
     text-transform: uppercase;
     hyphens: manual;
     margin-bottom: 62px;
+}
+
+@keyframes gradient {
+	0% { background-position: 0% 0; }
+	50% { background-position: 100% 0; }
+	100% { background-position: 0% 0; }
+}
+
+.page-about .rte h2 {
+	animation: gradient 20s linear infinite;
+	background: linear-gradient(70deg, rgba(255,38,163,1) 0%, rgba(0,73,176,1) 16%, rgba(238,130,178,1) 33%, rgba(0,194,229,1) 50%, rgba(238,130,178,1) 66%, rgba(0,73,176,1) 83%, rgba(255,38,163,1) 100%);
+	background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 @media (max-width: 998px) {
@@ -63,10 +88,19 @@
       padding-right: 24px;
   }
 }
+
+.page-about  .rte  h2 {
+  opacity: 0;
+  animation: .8s ease-in fadeIn forwards;
+}
+.page-about  .rte  h3 {
+  opacity: 0;
+  animation: .8s .4s ease-in fadeIn forwards;
+}
 {%endstyle%}
 <div class="page-about">
   <div class="page-width">
-    <h2 class="page-title visually-hidden">
+    <h2 class="page-title visually-hidden gradient-text">
       {%- if section.settings.page.title != blank -%}
         {{ section.settings.page.title | escape }}
       {%- else -%}

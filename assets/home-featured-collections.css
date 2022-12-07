@@ -19,11 +19,11 @@
 }
 
 .home-featured-collections .product-grid>*:first-child {
-    grid-column: 1 / span 4;
+    grid-column: 2 / span 3;
 }
 
 .home-featured-collections .product-grid>*:last-child {
-    grid-column: 5 / span 4;
+    grid-column: 5 / span 3;
 }
 
 .home-featured-collections .image-wrapper {
