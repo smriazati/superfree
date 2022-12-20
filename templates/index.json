@@ -17,6 +17,7 @@
     },
     "eff2e635-6de1-4a2a-885a-bc68afa5a653": {
       "type": "video-file",
+      "disabled": true,
       "settings": {
         "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-11-13_at_10.54_1.jpg"
       }
