@@ -226,7 +226,7 @@ cart-drawer-items {
 }
 
 .cart-drawer .cart-item__image {
-  
+  object-fit: contain;
 }
 
 .cart-drawer .cart-items thead {
