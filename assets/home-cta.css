@@ -56,7 +56,6 @@
     text-transform: uppercase;
     color: var(--white);
     text-align: center;
-    word-break: break-all;
 }
 
 @media (max-width: 998px) {
