@@ -46,7 +46,7 @@
 }
 
 .product__media-wrapper .swiper {
-    grid-column: 2 / 8;
+    grid-column: 1 / 10;
 }
 
 .swiper {
