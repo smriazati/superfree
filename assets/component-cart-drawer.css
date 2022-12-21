@@ -213,7 +213,7 @@ cart-drawer-items {
 .cart-drawer .cart-item {
   display: grid;
   grid-template: repeat(2, auto) / repeat(4, 1fr);
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 0;
 }
 
@@ -227,6 +227,7 @@ cart-drawer-items {
 
 .cart-drawer .cart-item__image {
   max-width: 100%;
+  max-height: 30%
 }
 
 .cart-drawer .cart-items thead {
