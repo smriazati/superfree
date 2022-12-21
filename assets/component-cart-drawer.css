@@ -465,4 +465,9 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   font-size: 20px;
   line-height:normal
   ;
+
+.cart-drawer .price {
+    font-size: 20px;
+}
+  
 }
