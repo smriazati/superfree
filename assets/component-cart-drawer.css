@@ -212,8 +212,8 @@ cart-drawer-items {
 
 .cart-drawer .cart-item {
   display: grid;
-  grid-template: repeat(2, auto) / repeat(4, 1fr);
-  gap: 1rem;
+  grid-template: repeat(2, auto) / repeat(2, 1fr);
+  gap: .5rem;
   margin-bottom: 0;
 }
 
@@ -462,12 +462,12 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 
 .cart-drawer .cart-item>td+td {
   text-transform: lowercase;
-  font-size: 20px;
+  font-size: 16px;
   line-height:normal
   ;
 
 .cart-drawer .price {
-    font-size: 20px;
+    font-size: 16px;
 }
   
 }
