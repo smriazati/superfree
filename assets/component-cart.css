@@ -234,8 +234,8 @@ cart-items {
 
 
 @media screen and (max-width: 750px) {
-  .cart__footer {padding-top: 0rem;
-    padding-right: 2rem;
+  .cart__footer {padding-top: 2rem;
+    padding-right: 0rem;
     padding-bottom: 2rem;
     padding-left: 0rem;}
 }
