@@ -94,3 +94,8 @@
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
 }
+
+
+@media screen and (max-width: 749px) {
+  .price {font-size:1rem}
+}
