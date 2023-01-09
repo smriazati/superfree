@@ -229,3 +229,10 @@ cart-items {
 .locals-only-label {
   margin-bottom: 24px;
 }
+
+
+
+
+@media screen and (max-width: 750px) {
+  .cart__footer {padding-left: none;}
+}
