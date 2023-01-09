@@ -36,5 +36,7 @@
 }
 
 @media screen and (max-width: 749px) {
-  .totals {font-size:1.2rem}
+.totals__subtotal-value {
+    font-size: 1.2rem;
+}
 }
