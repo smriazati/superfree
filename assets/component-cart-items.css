@@ -244,7 +244,7 @@ cart-remove-button .icon-remove {
   }
 
   .cart-item__quantity {
-    grid-column: 2 / 4;
+    grid-row: 2 / 3;
   }
 
   .cart-item__quantity-wrapper {
