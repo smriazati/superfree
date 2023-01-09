@@ -16,6 +16,7 @@
 
 .price--end {
   text-align: right;
+  display: none;
 }
 
 .price .price-item {
