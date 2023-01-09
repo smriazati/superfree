@@ -256,6 +256,12 @@ cart-remove-button .icon-remove {
     align-items: flex-start;
     justify-content: flex-end;
   }
+
+  .cart-item__image {
+    height: auto;
+    max-width: none;
+}
+  
 }
 
 .cart-item__error-text + svg {
