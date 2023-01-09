@@ -17,11 +17,11 @@
 
 .cart-item__totals {
   position: relative;
-  display: none;
 }
 
 .cart-items *.right {
   text-align: right;
+  display: none;
 }
 
 .cart-item__image-container {
