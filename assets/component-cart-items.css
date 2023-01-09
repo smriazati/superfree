@@ -241,7 +241,7 @@ cart-remove-button .icon-remove {
 
   .cart-item__details {
     grid-column: 2 / 4;
-    overflow-wrap: anywhere;
+    flex-wrap: wrap;
   }
 
   .cart-item__quantity {
