@@ -259,7 +259,7 @@ cart-remove-button .icon-remove {
 
   .cart-item__image {
     height: auto;
-    max-width: none;
+    max-width: 100%;
 }
   
 }
