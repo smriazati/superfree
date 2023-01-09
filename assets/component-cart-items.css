@@ -241,11 +241,10 @@ cart-remove-button .icon-remove {
 
   .cart-item__details {
     grid-column: 2 / 4;
-    flex-wrap: wrap;
   }
 
   .cart-item__quantity {
-    grid-column: 2 / 5;
+    grid-column: 2 / 4;
   }
 
   .cart-item__quantity-wrapper {
@@ -253,9 +252,7 @@ cart-remove-button .icon-remove {
   }
 
   .cart-item__totals {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+    grid-column: 2 / 4;
   }
 }
 
