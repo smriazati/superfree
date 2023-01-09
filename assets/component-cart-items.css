@@ -109,6 +109,7 @@
   font-size: 1.4rem;
   word-break: break-all;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
+  display: none;
 }
 
 .cart-item cart-remove-button {
