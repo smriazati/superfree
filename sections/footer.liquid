@@ -33,7 +33,7 @@
           <ul role="list" class="plain muted-menu">
             {%- for link in section.settings.footer-menu-3.links -%}
               <li>
-                <a href="{{ link.url }}">
+                <a href="{{ link.url }}" {% if link.title != "Email" %}target="_blank"{% endif %}>
                   {{ link.title | escape }}
                 </a>
               </li>
@@ -59,7 +59,7 @@
       <ul role="list" class="plain muted-menu-mobile">
         {%- for link in section.settings.footer-menu-mobile-2.links -%}
           <li>
-            <a href="{{ link.url }}">
+            <a href="{{ link.url }}" {% if link.title != "Email" %}target="_blank"{% endif %}>
               {{ link.title | escape }}
             </a>
           </li>

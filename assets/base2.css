@@ -487,6 +487,11 @@ ul.big-links li a:hover {
     display: none;
 }
 
+
 .cart-container {
     padding: 24px;
+}
+
+.product__tax.caption.rte {
+    text-align: center;
 }

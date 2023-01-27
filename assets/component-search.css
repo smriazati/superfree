@@ -35,7 +35,6 @@ input::-webkit-search-decoration {
 
 /* custom */
 .template-search {
-  min-height: 72vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -55,7 +54,7 @@ input::-webkit-search-decoration {
 
 .template-search form .field {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 24px;
 }
 

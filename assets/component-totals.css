@@ -34,3 +34,9 @@
     justify-content: flex-end;
   }
 }
+
+@media screen and (max-width: 749px) {
+.totals__subtotal-value {
+    font-size: 1.2rem;
+}
+}
