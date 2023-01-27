@@ -19,11 +19,11 @@
       "type": "video-file",
       "disabled": true,
       "settings": {
-        "cover_image": "shopify:\/\/shop_images\/Screen_Shot_2022-11-13_at_10.54_1.jpg"
       }
     },
-    "8ea2cccf-b57b-4dc2-b42a-2ccdd0071c79": {
+    "a778460e-a9ca-4389-9401-d345db4566ce": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Screen_Shot_2022-11-13_at_10.54_1.jpg"
       }
@@ -54,7 +54,7 @@
     "image_banner",
     "featured_collection",
     "eff2e635-6de1-4a2a-885a-bc68afa5a653",
-    "8ea2cccf-b57b-4dc2-b42a-2ccdd0071c79",
+    "a778460e-a9ca-4389-9401-d345db4566ce",
     "3d2969a6-4f31-44d0-b3cb-797c1a8f536b",
     "79a04a94-b502-4c5e-9c7c-37ff3f5f6315",
     "a9f4b05d-f132-48b2-a968-896e381ed0c4"
