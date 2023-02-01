@@ -8,11 +8,7 @@ function setTickerAnimation() {
     let tickerTextWidth = span.offsetWidth;
     let windowWidth = window.innerWidth;
     let speed = 60;
-    // if (windowWidth > 768) {
-    //     speed = 30;
-    // } else {
-    //     speed = 15;
-    // }
+
     gsap.set(ref, {
         x: windowWidth,
     });
@@ -24,26 +20,25 @@ function setTickerAnimation() {
     });
 }
 
+function setResizeTickerAnimation() {
+    var timeout = false, // holder for timeout id
+        delay = 250; // delay after event is "complete" to run callback
+
+    // window.resize event listener
+    window.addEventListener('resize', function () {
+        // clear the timeout
+        clearTimeout(timeout);
+        // start timing for event "completion"
+        timeout = setTimeout(initTicker, delay);
+    });
+}
+
 function initTicker() {
     setTickerAnimation();
+    setResizeTickerAnimation();
 }
 
 document.addEventListener('DOMContentLoaded', initTicker, false);
-
-
-
-var timeout = false, // holder for timeout id
-    delay = 250, // delay after event is "complete" to run callback
-    calls = 0;
-
-
-// window.resize event listener
-window.addEventListener('resize', function () {
-    // clear the timeout
-    clearTimeout(timeout);
-    // start timing for event "completion"
-    timeout = setTimeout(initTicker, delay);
-});
 
 
 

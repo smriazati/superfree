@@ -85,9 +85,10 @@ header.header {
 /* menu drawer toggle */
 
 header .header-drawer {
-    transition: .5s ease all;
+    /* transition: .5s ease all; */
 }
 
+header .header-drawer,
 header.collapsed .header-drawer {
     transform: translateY(-883px);
 }
