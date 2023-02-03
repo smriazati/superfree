@@ -11,7 +11,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Shop",
+        "title": "Featured Goods",
         "collection": "frontpage"
       }
     },
