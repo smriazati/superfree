@@ -185,6 +185,15 @@
   padding: 50px;
 }
 
+.collection .description-wrapper .text-wrapper p a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: black !important;
+  text-decoration: none !important;
+}
+
 .shop.collection .grid__item.description-wrapper {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
