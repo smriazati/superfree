@@ -161,6 +161,12 @@
   padding: 75px;
 }
 
+/* @media (max-width:680px) {
+  .collection.shop .card__media .media img {
+    padding: 0;
+  }
+} */
+
 .collection-title {
   margin-top: 30px;
 }
@@ -195,8 +201,13 @@
 }
 
 .shop.collection .grid__item.description-wrapper {
-  grid-column: 2 / 3;
   grid-row: 1 / 2;
+}
+
+@media (min-width: 680px) {
+  .shop.collection .grid__item.description-wrapper {
+    grid-column: 2 / 3;
+  }
 }
 
 .product-status {

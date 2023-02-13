@@ -13,6 +13,13 @@
     }
 }
 
+
+@media (max-width: 680px) {
+    .home-featured-links {
+        height: 100%;
+    }
+}
+
 .home-featured-links ul.big-links {
     justify-content: center;
     display: grid;
@@ -38,6 +45,7 @@
 @media (max-width:680px) {
     .home-featured-links ul.big-links li a {
         height: calc(100vw - 48px);
+        width: calc(100vw - 48px);
     }
 }
 
