@@ -50,7 +50,7 @@ function setTickerAnimation() {
     }
     let tickerTextWidth = span.offsetWidth;
     let windowWidth = window.innerWidth;
-    let speed = 30;
+    let speed = 20;
 
     gsap.set(ref, {
         x: windowWidth,
