@@ -204,7 +204,7 @@
   grid-row: 1 / 2;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 998px) {
   .shop.collection .grid__item.description-wrapper {
     grid-column: 2 / 3;
   }
