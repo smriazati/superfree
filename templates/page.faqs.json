@@ -44,6 +44,13 @@
             "title": "Stockists",
             "text": "<p>Mama Crow’s Burger & Salad Shop<br\/>Raleigh, NC<\/p><p>TigerBox Beauty<br\/>Wilmington, NC<\/p><p>Yoga Salt <br\/>Wilmington, NC<\/p><p>Buena Onda Cafe <br\/>St Augustine, FL <\/p><p>Real Raw Organics<br\/>Ocean City, MD<\/p>"
           }
+        },
+        "039d0c06-f61b-4fc7-92a5-499e28c17de9": {
+          "type": "faq",
+          "settings": {
+            "title": "PICK–UP \/ HOW TO FIND US",
+            "text": "<p>Our anti-inflammatory kitchen is located in the Cargo District in Wilmington, NC! We are on the first floor of the container building on the corner of Queen Street and 16th.<br\/>Find us on google maps : <a href=\"https:\/\/goo.gl\/maps\/HA17GUAckg1uCcbL7\" target=\"_blank\" title=\"Location Address Anti Inflammatory Kitchen\">905 Container Park Ln Wilmington, NC 28401<\/a><\/p><p>You are welcome to drive into the complex and park in front of the building. If walking, come around to the front door entrance on the opposite side of the building from Queen Street. Send us a text or DM or email when you arrive, or just come on in!<\/p>"
+          }
         }
       },
       "block_order": [
@@ -52,7 +59,8 @@
         "2c8c6ffe-6c32-456f-a926-c29af225c8c4",
         "ed4a53cf-1570-4d6e-9f6c-1564a8d9d5f6",
         "77667bc5-9d7a-4ce7-8df6-cdb82a63aaaa",
-        "6f33dc01-e0d7-41e4-81c6-54ee58a3b2d2"
+        "6f33dc01-e0d7-41e4-81c6-54ee58a3b2d2",
+        "039d0c06-f61b-4fc7-92a5-499e28c17de9"
       ],
       "settings": {
       }
