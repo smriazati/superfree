@@ -32,7 +32,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "featured",
-        "collection": "shop"
+        "collection": "frontpage"
       }
     }
   },
