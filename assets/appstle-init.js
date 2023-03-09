@@ -17,7 +17,7 @@
       };
 
 
-      appstleLoadScript("https://cdn.shopify.com/s/files/1/0640/6776/4452/t/3/assets/appstle-subscription.js?v=1678214063");
+      appstleLoadScript("https://cdn.shopify.com/s/files/1/0640/6776/4452/t/3/assets/appstle-subscription.js?v=1678372405");
 
 
       window.RS = Window.RS || {};
@@ -73,13 +73,50 @@
         "selectedDiscountFormat" : "SAVE {{selectedDiscountPercentage}}",
         "manageSubscriptionBtnFormat" : "<a href='apps\/subscriptions' class='appstle_manageSubBtn' ><button class='btn' style='padding: 2px 20px'>Manage Subscription<\/button><a><br><br>",
         "manageSubscriptionUrl" : "apps\/subscriptions",
-        "appstlePlanId": -1,
+        "appstlePlanId": 161,
         "showCheckoutSubscriptionBtn": true,
         "disableLoadingJquery": false,
         "widgetEnabledOnSoldVariant": "false",
         "switchRadioButtonWidget": false,
         "appstlePlanName": "FREE",
-        "appstlePlanFeatures": {},
+        "appstlePlanFeatures": {
+	"subscriptionOrderAmount": 500.0,
+	"analytics": true,
+	"enableSubscriptionManagement": true,
+	"enableDunningManagement": true,
+	"enableCustomerPortalSettings": true,
+	"enableShippingProfiles": true,
+	"enableProductSwapAutomation": false,
+	"enableAdvancedSellingPlans": false,
+	"enableSummaryReports": false,
+	"enableCustomEmailDomain": false,
+	"enableWidgetPlacement": false,
+	"enableIntegrations": true,
+	"enableSmsAlert": false,
+	"enableCustomEmailHtml": false,
+	"enableCancellationManagement": false,
+	"enableBundling": false,
+	"enableAutomation": false,
+	"enableQuickActions": false,
+	"enableExternalApi": false,
+	"enableCartWidget": false,
+	"enableAutoSync": false,
+	"webhookAccess": false,
+	"accessWidgetDesignOptions": false,
+	"accessSubscriptionActivityLogs": true,
+	"accessBuildABox": false,
+	"accessResendEmail": false,
+	"accessKlaviyoContactSync": false,
+	"accessOneTimeProductUpsells": false,
+	"accessAdvanceSubscriptionPlanOptions": false,
+	"accessSplitContract": false,
+	"accessDiscountOnCancellationAttempt": false,
+	"accessQuickCheckout": false,
+	"accessSubscriberLoyaltyFeatures": false,
+	"accessBundling": false,
+	"accessManualSubscriptionCreation": false,
+	"accessAppstleMenu": false
+},
         "formMappingAttributeName": "",
         "formMappingAttributeSelector": "",
         "quickViewModalPollingSelector": "",
