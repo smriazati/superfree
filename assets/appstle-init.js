@@ -17,14 +17,14 @@
       };
 
 
-      appstleLoadScript("https://cdn.shopify.com/s/files/1/0640/6776/4452/t/3/assets/appstle-subscription.js?v=1678372405");
+      appstleLoadScript("https://cdn.shopify.com/s/files/1/0640/6776/4452/t/3/assets/appstle-subscription.js?v=1678466178");
 
 
       window.RS = Window.RS || {};
       RS.Config = {
         "selectors": {
             "payment_button_selectors": "form[action$='/cart/add'] .shopify-payment-button",
-            "subscriptionLinkSelector": "",
+            "subscriptionLinkSelector": "#MainContent .customer.account > div:nth-child(2) > div:nth-child(2) > h2",
             "atcButtonPlacement": "BEFORE",
             "subscriptionLinkPlacement": "BEFORE",
             "cartRowSelector": "",
@@ -37,7 +37,7 @@
         },
         "enableCartWidgetFeature": "false",
         "useUrlWithCustomerId": "true",
-        "atcButtonSelector": "",
+        "atcButtonSelector": "div.product-form__buttons",
         "moneyFormat": "{% raw %}${{amount}}{% endraw %}",
         "oneTimePurchaseText": "One Time Purchase",
         "shop": "superfree-food.myshopify.com",
@@ -187,7 +187,7 @@
             },
             "customCSS": "",
             "customerPortalCss": "",
-            "priceSelector": "",
+            "priceSelector": "span.price-item.price-item--regular",
             "landingPagePriceSelector": "",
             "quickViewClickSelector": "",
             "badgeTop": "",
