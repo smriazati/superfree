@@ -246,7 +246,7 @@
       "remove_title": "Remove {{ title }}",
       "subtotal": "SUBTOTAL",
       "new_subtotal": "New subtotal",
-      "note": "Please note, our \"locals only\" products are available in North Carolina only. If for pick-up, we will send a follow up email with open times. If for drop-off we will reach out with our best eta when we have it – drop offs are almost always fulfilled within a week, often sooner!",
+      "note": "If your order is for pick-up, we will send a follow up email with open times. For drop offs, we will reach out with our best eta when we have it – drop offs are almost always fulfilled within a week, often sooner!",
       "checkout": "Check out",
       "empty": "your cart is empty",
       "cart_error": "There was an error while updating your cart. Please try again.",
