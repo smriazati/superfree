@@ -60,5 +60,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".collection.shop .card__media .media img {object-fit: contain; padding: 48px;}"
+    ]
   }
 }
