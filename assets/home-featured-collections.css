@@ -46,6 +46,9 @@
 .home-featured-collections .image-wrapper:hover>img:last-child {
     opacity: 1;
 }
+.home-featured-collections .image-wrapper:hover>img:first-child {
+    opacity: 0;
+}
 
 .home-featured-collections .image-wrapper img {
     width: 100%;
