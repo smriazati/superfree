@@ -35,12 +35,12 @@
 .home-featured-collections .image-wrapper>img {
     grid-column: 1 / 1;
     grid-row: 1 / 1;
+    transition: .3s ease all;
     /* padding: 50px; */
 }
 
 .home-featured-collections .image-wrapper>img:last-child {
     opacity: 0;
-    transition: .3s ease all;
 }
 
 .home-featured-collections .image-wrapper:hover>img:last-child {
