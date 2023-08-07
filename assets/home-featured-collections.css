@@ -35,7 +35,7 @@
 .home-featured-collections .image-wrapper>img {
     grid-column: 1 / 1;
     grid-row: 1 / 1;
-    transition: .3s ease all;
+    transition: .5s ease all;
     /* padding: 50px; */
 }
 
