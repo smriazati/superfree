@@ -4,10 +4,7 @@ function preventBarbaIntoShop() {
     const cart = document.querySelectorAll("a[href^='/cart']");
     const account = document.querySelectorAll("a[href^='/account']");
 
-    collections.forEach(el => el.classList.add('prevent'));
-    products.forEach(el => el.classList.add('prevent'));
-    cart.forEach(el => el.classList.add('prevent'));
-    account.forEach(el => el.classList.add('prevent'));
+
 }
 
 function setBodyClass(next) {
