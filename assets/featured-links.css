@@ -50,7 +50,7 @@
 }
 
 .home-featured-links ul.big-links>*:first-child {
-    grid-column: 2 / span 3;
+    grid-column: 3 / span 3;
 }
 
 /*.home-featured-links ul.big-links>*:last-child {
