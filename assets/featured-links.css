@@ -49,11 +49,11 @@
     }
 }
 
- /*.home-featured-links ul.big-links>*:first-child {
+.home-featured-links ul.big-links>*:first-child {
     grid-column: 2 / span 3;
 }
 
-.home-featured-links ul.big-links>*:last-child {
+/*.home-featured-links ul.big-links>*:last-child {
     grid-column: 5 / span 3;
 }
 
