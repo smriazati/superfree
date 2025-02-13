@@ -152,10 +152,10 @@
 }
 
 .card__media .media img {
-  height: 100%;
+  height: 80%;
   object-fit: cover;
   object-position: center center;
-  width: 100%;
+  width: 80%;
 }
 
 .card__inner:not(.ratio)>.card__content {
