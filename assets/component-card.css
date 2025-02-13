@@ -83,9 +83,11 @@
 
 .card__media,
 .card .media {
-  bottom: 0;
+  left: 0;
   position: absolute;
-  top: 0;
+  right: 0;
+  margin-inline:auto;
+  width: fit-content;
 }
 
 .card .media {
@@ -93,7 +95,7 @@
 }
 
 .card__media {
-  margin: auto;
+  margin: 0px;
   width: calc(100% - 2 * 0px);
 }
 
