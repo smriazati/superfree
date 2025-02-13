@@ -83,15 +83,13 @@
 
 .card__media,
 .card .media {
-  left: 0;
+  bottom: 0;
   position: absolute;
-  right: 0;
-  margin-inline:auto;
-  width: fit-content;
+  top: 0;
 }
 
 .card .media {
-  width: 80%;
+  width: 100%;
 }
 
 .card__media {
