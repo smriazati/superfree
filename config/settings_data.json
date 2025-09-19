@@ -1,18 +1,18 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "favicon": "shopify://shop_images/favicon.png",
     "cart_type": "drawer",
     "show_cart_note": true,
-    "checkout_logo_image": "shopify:\/\/shop_images\/Superfree-PrimaryLogo-white-transparent_1.png",
+    "checkout_logo_image": "shopify://shop_images/Superfree-PrimaryLogo-white-transparent_1.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
     "checkout_body_background_color": "#111313",
@@ -23,7 +23,7 @@
     "checkout_accent_color": "#8c8c8c",
     "checkout_button_color": "#111313",
     "checkout_error_color": "#ffe7e7",
-    "logo": "shopify:\/\/shop_images\/Superfree-PrimaryLogo-white-transparent_1.png",
+    "logo": "shopify://shop_images/Superfree-PrimaryLogo-white-transparent_1.png",
     "sections": {
       "header": {
         "type": "header",
@@ -42,38 +42,32 @@
           "footer-menu-mobile-2": "footer-menu-mobile-2",
           "newsletter_enable": true,
           "newsletter_heading": "Be a rainbow body",
-          "newsletter_body": "insights \/ events and happenings \/ product uses \/ recipes \/ resources \/ new product announcements \/ insider perks \/ gut healing magic",
+          "newsletter_body": "insights / events and happenings / product uses / recipes / resources / new product announcements / insider perks / gut healing magic",
           "footer_disclosure": "* These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease."
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "17433828765706220224": {
-        "type": "shopify:\/\/apps\/back-in-stock-restock\/blocks\/app-embed\/a2a0a648-aa81-4132-98a8-31e62b1f3e83",
+        "type": "shopify://apps/back-in-stock-restock/blocks/app-embed/a2a0a648-aa81-4132-98a8-31e62b1f3e83",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "12198985164985445843": {
-        "type": "shopify:\/\/apps\/nova-eu-cookie-bar-gdpr\/blocks\/app-embed\/6667ecbd-70cf-4527-84a9-e6037e6ca706",
+        "type": "shopify://apps/nova-eu-cookie-bar-gdpr/blocks/app-embed/6667ecbd-70cf-4527-84a9-e6037e6ca706",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "10436698916776057164": {
-        "type": "shopify:\/\/apps\/appstle-subscription\/blocks\/appstle-subscription-helper\/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
-        "disabled": false,
-        "settings": {
-        }
+        "type": "shopify://apps/appstle-subscription/blocks/appstle-subscription-helper/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
+        "disabled": true,
+        "settings": {}
       }
     }
   },
