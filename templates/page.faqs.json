@@ -72,9 +72,98 @@
         "46a41d39-bed9-400e-8adf-6269b13ae09d"
       ],
       "settings": {}
+    },
+    "collapsible_content_p9yjXN": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_fExC9T": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is maca butter, anyway?",
+            "icon": "none",
+            "row_content": "<p>Think of it like a nut butter, but just so much better. Butter for you. Better for the earth. Better tasting. More versatile. Super luxurious and intentional, through and through. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_MQHKXN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does it last?",
+            "icon": "none",
+            "row_content": "<p>The shelf life of maca maca is 18 months + unopened and unrefrigerated (stored in a cool, dry, shaded place). This was lab tested! All other goods are shelf stable for at least 18 months, as well. Given the right storage you’re able to stock up on everything  – the point is to have these supportive foods readily and consistently available for your daily life!</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_fExC9T",
+        "collapsible_row_MQHKXN"
+      ],
+      "custom_css": [
+        "h2 {text-transform: uppercase;}"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Ingredients / Products",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_67kHCn": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_DtVTNf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is maca butter, anyway?",
+            "icon": "none",
+            "row_content": "<p>Think of it like a nut butter, but just so much better. Butter for you. Better for the earth. Better tasting. More versatile. Super luxurious and intentional, through and through. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bLpmzA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does it last?",
+            "icon": "none",
+            "row_content": "<p>The shelf life of maca maca is 18 months + unopened and unrefrigerated (stored in a cool, dry, shaded place). This was lab tested! All other goods are shelf stable for at least 18 months, as well. Given the right storage you’re able to stock up on everything  – the point is to have these supportive foods readily and consistently available for your daily life!</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_DtVTNf",
+        "collapsible_row_bLpmzA"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Ingredients / Products",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collapsible_content_p9yjXN",
+    "collapsible_content_67kHCn"
   ]
 }
