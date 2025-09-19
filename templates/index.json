@@ -1,18 +1,18 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/SuperFreeFoods_MacaMaca_BlueWater.jpg",
+        "image": "shopify://shop_images/SuperFreeFoods_MacaMaca_BlueWater.jpg",
         "heading": "Anti inflammatory",
         "button": "Shop goods"
       }
@@ -28,8 +28,8 @@
       "type": "video",
       "disabled": true,
       "settings": {
-        "cover_image": "shopify:\/\/shop_images\/GUN_0535_1.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=NpEaa2P7qZI",
+        "cover_image": "shopify://shop_images/GUN_0535_1.jpg",
+        "video_url": "https://www.youtube.com/watch?v=NpEaa2P7qZI",
         "description": ""
       }
     },
@@ -37,11 +37,12 @@
       "type": "image-with-text",
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-11-13_at_10.54_1.jpg"
+        "image": "shopify://shop_images/Screen_Shot_2022-11-13_at_10.54_1.jpg"
       }
     },
     "3d2969a6-4f31-44d0-b3cb-797c1a8f536b": {
       "type": "featured-links",
+      "disabled": true,
       "settings": {
         "menu": "shop-menu"
       }
@@ -49,9 +50,9 @@
     "79a04a94-b502-4c5e-9c7c-37ff3f5f6315": {
       "type": "home-cta",
       "settings": {
-        "image": "shopify:\/\/shop_images\/plant-based.jpg",
+        "image": "shopify://shop_images/plant-based.jpg",
         "heading": "follow @Superfreefood on Instagram",
-        "link": "https:\/\/www.instagram.com\/superfreefood\/",
+        "link": "https://www.instagram.com/superfreefood/",
         "isNewTab": true
       }
     },
