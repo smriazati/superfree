@@ -99,6 +99,7 @@
         "collapsible_row_fExC9T",
         "collapsible_row_MQHKXN"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {text-transform: uppercase;}"
       ],
@@ -124,30 +125,74 @@
         "collapsible_row_DtVTNf": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What is maca butter, anyway?",
+            "heading": "What's with all the fat?",
             "icon": "none",
-            "row_content": "<p>Think of it like a nut butter, but just so much better. Butter for you. Better for the earth. Better tasting. More versatile. Super luxurious and intentional, through and through. </p>",
+            "row_content": "<p>SUPERFREE proudly and intentionally emphasizes the highest quality fats in our goods. Not only are they incredibly helpful in facilitating the absorption and increasing the bioavailability of the other nutrient dense ingredients, they are super energy sustaining in themselves. Generally, fat takes longer to digest as it is released from the stomach to the small intestines at a slower interval, therefore providing longer lasting energy, *not* a falsified sense of energy that just ends up in a big crash as is commonly experienced with products claiming to provide an “energy boost” (typically just from refined oils coated in refined sugar, or some iteration of that sort). We highlight Omega-3 rich fat sources, which are inherently anti-inflammatory, especially when consumed in a higher ratio than that of Omega-6 fats, which are found in generic soy, corn, and vegetable oils. Our high quality, 100% organic coconut oil sourced MCT oil (medium-chain-triglycerides), a key ingredient in our MACA BUTTER (and *the* key ingredient of our GUT MCT), are profoundly beneficial and have been scientifically found to help promote the feeling of fullness, which can support sustainable weight loss or maintenance. They can also potentially help you stay in ketosis (fat burning state) longer, and may assist a healthy gut environment by optimizing the growth of good gut flora. They are also known to help combat the development of leaky gut and actually repair the intestinal lining. The fats we utilize in our goods are in symbiosis with every other ingredient and function as the through line of all our products.</p>",
             "page": ""
           }
         },
         "collapsible_row_bLpmzA": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How long does it last?",
+            "heading": "Should I care about calorie content?",
             "icon": "none",
-            "row_content": "<p>The shelf life of maca maca is 18 months + unopened and unrefrigerated (stored in a cool, dry, shaded place). This was lab tested! All other goods are shelf stable for at least 18 months, as well. Given the right storage you’re able to stock up on everything  – the point is to have these supportive foods readily and consistently available for your daily life!</p>",
+            "row_content": "<p>In our view, not when it comes to SUPERFREE goods! Fats of course provide the highest calorie source, a measurement of energy, but they are super energy *sustaining* so you need to eat less to feel full and be truly satiated! When you’re eating a whole foods, plant-rich, high quality fat diet, measurements such as calories are less important to focus on. Think quality over quantity.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_WUFDHX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "But what about protein?",
+            "icon": "none",
+            "row_content": "<p>A common misconception when it comes to plant based or even plant-oriented diets is that not enough protein can be obtained. Consciously consuming means paying attention to what you are eating and making sure your choices are providing a balanced set of macro and micro nutrients, no matter your particular “diet”. A plant rich diet by no means is lacking in protein, nor are our goods for that matter! Nuts, seeds, legumes, grains, veggies and even some fruits in combination can provide all your protein needs! We focus on ingredients that sustain energy and the high functionality of our internal systems as a means to fuel our bodies and support our “best” most balanced lives.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_PFyCqA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What should I eat?",
+            "icon": "none",
+            "row_content": "<p>In addition to SUPERFREE goods on the regular, of course, it is widely accepted that generally you should eat foods that are whole, minimally processed, and mostly of plant origin. Also organic and from small regenerative farming systems wherever possible. Beyond that, eating seasonally and locally where you can, as consciously as you can (sourcing matters!), and according to your own body’s particular needs and energy outputs are all important as well. We focus here on highly anti-inflammatory ingredients and processes, as well as lifestyle choices, all of which are advisable for anyone living in our modern western high-stimulus fast-track world and thus subject to inflammatory agents acutely and chronically, dietarily and socially. There’s a lot more detail to go into of course so keep an eye out (follow us on instagram @superfreefood and subscribe to our newsletter!) for more resources and tools coming to our site soon, such as anti-inflammatory recipe books and meal plans, etc!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wCKgT6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What do you mean by \"raw\"?",
+            "icon": "none",
+            "row_content": "<p>Technically, a raw food is one which has not been heated to above 118 degrees F, therefore its proteins and fats and chemical structures have not been denatured by that process and it maintains virtues closer to that which were intended by nature. The idea is that the raw version of an ingredient upholds its integrity providing a less adulterated and literally more “alive” source of nourishment. There are methods to gently “cook” or process ingredients while maintaining their raw status that function to make them more bioavailable (i.e. nutrients made more accessible by our body’s systems / more digestible!) such as fermenting, or soaking and grinding, some of which we intentionally utilize in making our goods. We by no means promote an entirely raw diet nor deny that it can truly work well for some, though typically it’s found that an entirely raw diet is best for an intentional or “reset” period of time versus all the time, as is the case inherently with any extreme endeavor. Often intentionally cooked foods are easier on our systems and easier to break down in our gut, in particular. There’s a reason we humans first started to cook foods, not only to make nutrients more or even at all accessible (think of eating a raw potato, no thanks!), but also safer. Plant foods often have natural barriers, which protect them in the wild and allow their species to survive and successfully evolve through generations (there’s often a toxic exterior coating on seeds to deter predators and endure varying environments, for example) but these same barriers can also be harsh on our systems. Our objective is not to preach any particular diet or adaptation, only to provide some knowledge and empowering resources here and first and foremost food that you can actually eat that actually makes you feel good, and sustainably at that! We obviously could nerd out on the nutrition side of things all day, (we will probably write books on this at some point), but again look out for more resources and learning tools coming to the site soon!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Kp7BYf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I or my loved one was recently diagnosed with an autoimmune/inflammatory disease or condition, what do I eat?",
+            "icon": "none",
+            "row_content": "<p>This of course is a case by case answer, but overall our foods are meant to be not only friendly but actively healing for these situations, especially when it comes to gut health. We aim to keep our goods approachable and extra delicious so nobody feels like they're missing out, especially when confronting new dietary restrictions. We’re here for you! Keep a lookout for more resources popping up on our site (such as customized holistic nutritional counseling!), and feel free to reach out to inquire about your particular needs. This is what we do and why we do it, we would love to hear from you.</p>",
             "page": ""
           }
         }
       },
       "block_order": [
         "collapsible_row_DtVTNf",
-        "collapsible_row_bLpmzA"
+        "collapsible_row_bLpmzA",
+        "collapsible_row_WUFDHX",
+        "collapsible_row_PFyCqA",
+        "collapsible_row_wCKgT6",
+        "collapsible_row_Kp7BYf"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {text-transform: uppercase;}"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
-        "heading": "Ingredients / Products",
+        "heading": "Nutrition",
         "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
