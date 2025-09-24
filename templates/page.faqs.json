@@ -99,6 +99,7 @@
         "collapsible_row_fExC9T",
         "collapsible_row_MQHKXN"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {text-transform: uppercase;}"
       ],
