@@ -9,12 +9,37 @@
  */
 {
   "sections": {
+    "rich_text_69yFpQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4JGkCr": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>We ship our anti-inflammatory, gut healthy goods, nationwide!<br/></p><p><a href=\"https://superfreefood.com/pages/newsletter\" target=\"_blank\">SIGN UP FOR OUR NEWSLETTER</a> to stay in the loop, and for special discounts!<br/></p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4JGkCr"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {}
     }
   },
   "order": [
+    "rich_text_69yFpQ",
     "product-grid"
   ]
 }
