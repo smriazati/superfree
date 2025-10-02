@@ -24,7 +24,7 @@
         "heading_4JGkCr"
       ],
       "custom_css": [
-        ".rich-text {background: #fff; color: #000;}",
+        ".rich-text {color: #000;}",
         "h2 {font-size: 18px !important; line-height: 26px !important;}"
       ],
       "name": "t:sections.rich-text.presets.name",
