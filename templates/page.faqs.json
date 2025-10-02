@@ -261,13 +261,17 @@
         "collapsible_row_w3xxjW",
         "collapsible_row_LcVwMQ"
       ],
-      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 36px; text-transform: uppercase; margin-bottom: 10px;}",
+        "h3 {font-size: 18px !important; line-height: 24px;}",
+        ".collapsible-content__wrapper {max-width: 900px; width: 100%; margin: 0 auto;}"
+      ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
         "heading": "Usage & Rituals",
         "heading_size": "h2",
-        "heading_alignment": "center",
+        "heading_alignment": "left",
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",
