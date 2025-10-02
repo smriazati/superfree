@@ -14,6 +14,7 @@
       "blocks": {
         "0c04186e-0eb8-4bcf-8992-190e5b418285": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "title": "Ingredients / Products",
             "text": "<p><strong>What is maca butter, anyway?</strong></p><p><em>Think of it like a nut butter, but just so much better. Butter for you. Better for the earth. Better tasting. More versatile. Super luxurious and intentional, through and through. </em></p><p><strong>How long does it last?</strong></p><p><em>The shelf life of maca maca is 18 months + unopened and unrefrigerated (stored in a cool, dry, shaded place). This was lab tested! All other goods are shelf stable for at least 18 months, as well. Given the right storage you’re able to stock up on everything  – the point is to have these supportive foods readily and consistently available for your daily life!</em></p><p></p>"
@@ -21,6 +22,7 @@
         },
         "19584cdf-51a2-4526-bd99-1a3ef86998dc": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "title": "Nutrition",
             "text": "<p><strong>What’s with all the fat?</strong> </p><p><em>SUPERFREE proudly and intentionally emphasizes the highest quality fats in our goods. Not only are they incredibly helpful in facilitating the absorption and increasing the bioavailability of the other nutrient dense ingredients, they are super energy sustaining in themselves. Generally, fat takes longer to digest as it is released from the stomach to the small intestines at a slower interval, therefore providing longer lasting energy, *not* a falsified sense of energy that just ends up in a big crash as is commonly experienced with products claiming to provide an “energy boost” (typically just from refined oils coated in refined sugar, or some iteration of that sort). We highlight Omega-3 rich fat sources, which are inherently anti-inflammatory, especially when consumed in a higher ratio than that of Omega-6 fats, which are found in generic soy, corn, and vegetable oils. Our high quality, 100% organic coconut oil sourced MCT oil (medium-chain-triglycerides), a key ingredient in our MACA BUTTER (and *the* key ingredient of our GUT MCT), are profoundly beneficial and have been scientifically found to help promote the feeling of fullness, which can support sustainable weight loss or maintenance. They can also potentially help you stay in ketosis (fat burning state) longer, and may assist a healthy gut environment by optimizing the growth of good gut flora. They are also known to help combat the development of leaky gut and actually repair the intestinal lining. The fats we utilize in our goods are in symbiosis with every other ingredient and function as the through line of all our products.</em></p><p><strong>Should I care about calorie content?</strong> </p><p><em>In our view, not when it comes to SUPERFREE goods! Fats of course provide the highest calorie source, a measurement of energy, but they are super energy *sustaining* so you need to eat less to feel full and be truly satiated! When you’re eating a whole foods, plant-rich, high quality fat diet, measurements such as calories are less important to focus on. Think quality over quantity.</em></p><p><strong>But what about protein?</strong> </p><p><em>A common misconception when it comes to plant based or even plant-oriented diets is that not enough protein can be obtained. Consciously consuming means paying attention to what you are eating and making sure your choices are providing a balanced set of macro and micro nutrients, no matter your particular “diet”. A plant rich diet by no means is lacking in protein, nor are our goods for that matter! Nuts, seeds, legumes, grains, veggies and even some fruits in combination can provide all your protein needs! We focus on ingredients that sustain energy and the high functionality of our internal systems as a means to fuel our bodies and support our “best” most balanced lives.</em></p><p><strong>What should I eat?</strong> </p><p><em>In addition to SUPERFREE goods on the regular, of course, it is widely accepted that generally you should eat foods that are whole, minimally processed, and mostly of plant origin. Also organic and from small regenerative farming systems wherever possible. Beyond that, eating seasonally and locally where you can, as consciously as you can (sourcing matters!), and according to your own body’s particular needs and energy outputs are all important as well. We focus here on highly anti-inflammatory ingredients and processes, as well as lifestyle choices, all of which are advisable for anyone living in our modern western high-stimulus fast-track world and thus subject to inflammatory agents acutely and chronically, dietarily and socially. There’s a lot more detail to go into of course so keep an eye out (follow us on instagram @superfreefood and subscribe to our newsletter!) for more resources and tools coming to our site soon, such as anti-inflammatory recipe books and meal plans, etc!</em></p><p><strong>What do you mean by “raw”?</strong> </p><p><em>Technically, a raw food is one which has not been heated to above 118 degrees F, therefore its proteins and fats and chemical structures have not been denatured by that process and it maintains virtues closer to that which were intended by nature. The idea is that the raw version of an ingredient upholds its integrity providing a less adulterated and literally more “alive” source of nourishment. There are methods to gently “cook” or process ingredients while maintaining their raw status that function to make them more bioavailable (i.e. nutrients made more accessible by our body’s systems / more digestible!) such as fermenting, or soaking and grinding, some of which we intentionally utilize in making our goods. We by no means promote an entirely raw diet nor deny that it can truly work well for some, though typically it’s found that an entirely raw diet is best for an intentional or “reset” period of time versus all the time, as is the case inherently with any extreme endeavor. Often intentionally cooked foods are easier on our systems and easier to break down in our gut, in particular. There’s a reason we humans first started to cook foods, not only to make nutrients more or even at all accessible (think of eating a raw potato, no thanks!), but also safer. Plant foods often have natural barriers, which protect them in the wild and allow their species to survive and successfully evolve through generations (there’s often a toxic exterior coating on seeds to deter predators and endure varying environments, for example) but these same barriers can also be harsh on our systems. Our objective is not to preach any particular diet or adaptation, only to provide some knowledge and empowering resources here and first and foremost food that you can actually eat that actually makes you feel good, and sustainably at that! We obviously could nerd out on the nutrition side of things all day, (we will probably write books on this at some point), but again look out for more resources and learning tools coming to the site soon!</em></p><p><strong>I or my loved one was recently diagnosed with x (autoimmune/inflammatory disease or condition), what do I eat?</strong></p><p><em>This of course is a case by case answer, but overall our foods are meant to be not only friendly but actively healing for these situations, especially when it comes to gut health. We aim to keep our goods approachable and extra delicious so nobody feels like they're missing out, especially when confronting new dietary restrictions. We’re here for you! Keep a lookout for more resources popping up on our site (such as customized holistic nutritional counseling!), and feel free to reach out to inquire about your particular needs. This is what we do and why we do it, we would love to hear from you.</em></p>"
@@ -28,6 +30,7 @@
         },
         "ed4a53cf-1570-4d6e-9f6c-1564a8d9d5f6": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "title": "Usage & Rituals",
             "text": "<p><strong>How do I use these products?</strong></p><p><em>There are endless applications for all of our goods, given their guilt-free and indulgent nature – any thing and truly any time goes! See product descriptions for more ideas.</em></p><p><strong>What’s your favorite use? </strong></p><p><em>A big scoop of Maca Butter and a dropper full of Gut Mct blended into coffee first thing in the morning. Add in a few of our perfect dates and some of our beautiful raw Peruvian cacao and you're really doing a body good (we call this the \"elixir\", optimal for breaking the overnight fast – pro tip check out our \"Elixir Bundle\" and subscribe monthly to save big). Also put some Maca Butter on top of your soaked Adaptogenic Chia Oats and you are set for a good day everyday. Thank you very much.</em></p><p><strong>How do I get SUPERFREE in my life everyday? </strong></p><p><em>Subscribe!!! This is the best way to ensure all this goodness is an integral part of your life and you don’t have to use precious brain capacity to remember to get your order in. You can change, pause, skip, cancel, anytime! Treat yourself to satiating self care. Gut health is wealth.</em></p><p><strong>Will my carnivorous family like it, though?</strong> </p><p><em>All of our goods are created with the intention of bringing taste and craveability to the forefront, just as much as the nutritional and ethical/sustainable values, so literally anyone and everyone can enjoy them, for whatever reason! Whether you’re a meat-and-potatoes kinda folk, a full on vegan, raw foodist, doing keto, paleo, flexitarian, pescatarian, don't even care, etc, you are welcome here. You absolutely do not need to have some diagnosed condition or even any dietary restrictions for that matter to thoroughly enjoy our goods. We are all about the *feel good* here, in all the ways!</em></p>"
@@ -281,12 +284,158 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collapsible_content_wK7JtP": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_6G7CGG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Interested in carrying SUPERFREE?",
+            "icon": "none",
+            "row_content": "<p>We run a very select group of stockists – we’d love to hear from you if you feel your platform aligns with all that is SUPERFREE! We have a direct link on Faire now, <a href=\"https://faire.com/direct/superfree\">check us out</a>!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_QfXPXz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you ship internationally?",
+            "icon": "none",
+            "row_content": "<p>We can accommodate international orders, just reach out directly!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_xx9jUt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where is SUPERFREE made?",
+            "icon": "none",
+            "row_content": "<p>Wilmington, NC</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zwwynA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is your packaging recyclable?",
+            "icon": "none",
+            "row_content": "<p>Yes! We have a commitment to clean products in every dimension possible, so we use glass jars on purpose as glass is non-toxic, non-porous, and therefore won’t leach harmful chemicals into the foods nor into your body. They are also super easy to re-use/purpose – make candles, mini plant pots, store dry goods, etc. (we think they’re cute). Dry goods bags are totally recyclable / reusable as well. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UTDxQk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are you hiring?",
+            "icon": "none",
+            "row_content": "<p>YES! We are actively looking for a fractional CMO.<br/><br/>We are slowly building out other aspects of our team and will need more and more help as time goes on! Please send us an email detailing how you think you could contribute to the cause. We look forward to hearing from you!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_3fmfCW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I’d love to collaborate or do a feature or a giveaway with you, how is best to go about that?",
+            "icon": "none",
+            "row_content": "<p>We love it all! Email or DM us with your idea, can’t wait!</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_6G7CGG",
+        "collapsible_row_QfXPXz",
+        "collapsible_row_xx9jUt",
+        "collapsible_row_zwwynA",
+        "collapsible_row_UTDxQk",
+        "collapsible_row_3fmfCW"
+      ],
+      "custom_css": [
+        "h2 {font-size: 36px; text-transform: uppercase; margin-bottom: 10px;}",
+        "h3 {font-size: 18px !important; line-height: 24px;}",
+        ".collapsible-content__wrapper {max-width: 900px; width: 100%; margin: 0 auto;}"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Other",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_tfrahY": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_ehEj8C": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How soon can I expect my order?",
+            "icon": "none",
+            "row_content": "<p>Typically orders are fulfilled within a week, often much sooner! Once we receive your order and it's marked ready to ship tracking will be sent your way!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_JCW8YE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I change or cancel my order?",
+            "icon": "none",
+            "row_content": "<p>Reach out to us as soon as possible and we should be able to work that out for you! No guarantees if processing has already begun.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_r7WMye": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your return policy?",
+            "icon": "none",
+            "row_content": "<p>Unfortunately we cannot accept returns, items range in perishability (view item descriptions) but if there is an issue don’t hesitate to reach out so we can best solve it for you.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_ehEj8C",
+        "collapsible_row_JCW8YE",
+        "collapsible_row_r7WMye"
+      ],
+      "custom_css": [
+        "h2 {font-size: 36px; text-transform: uppercase; margin-bottom: 10px;}",
+        "h3 {font-size: 18px !important; line-height: 24px;}",
+        ".collapsible-content__wrapper {max-width: 900px; width: 100%; margin: 0 auto;}"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Ordering Guide",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "collapsible_content_p9yjXN",
     "collapsible_content_67kHCn",
-    "collapsible_content_MaUA6k"
+    "collapsible_content_MaUA6k",
+    "collapsible_content_wK7JtP",
+    "collapsible_content_tfrahY"
   ]
 }
