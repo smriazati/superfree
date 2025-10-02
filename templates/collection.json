@@ -23,6 +23,10 @@
       "block_order": [
         "heading_4JGkCr"
       ],
+      "custom_css": [
+        ".rich-text {background: #000; color: #fff;}",
+        "h2 {font-size: 16px !important;}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
