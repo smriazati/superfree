@@ -556,13 +556,13 @@
         "column_6hbWYh"
       ],
       "custom_css": [
-        "h2 {font-size: 36px; text-transform: uppercase; text-align: center !important;}",
+        "h2 {font-size: 36px; text-transform: uppercase; margin: 0 auto;}",
         ".multicolumn {max-width: 1050px; width: 100%; margin: 0 auto;}",
         ".multicolumn-card {background: #fff;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "WHere can I find superfree?",
+        "title": "Where can I find superfree?",
         "heading_size": "h2",
         "image_width": "third",
         "image_ratio": "adapt",
