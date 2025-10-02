@@ -38,6 +38,7 @@
         },
         "77667bc5-9d7a-4ce7-8df6-cdb82a63aaaa": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "title": "OTHER",
             "text": "<p><strong>Interested in carrying SUPERFREE?</strong></p><p><em>We run a very select group of stockists – we’d love to hear from you if you feel your platform aligns with all that is SUPERFREE! We have a direct link on Faire now, </em><a href=\"https://faire.com/direct/superfree\" target=\"_blank\" title=\"https://faire.com/direct/superfree\"><em>check us out</em></a><em>!</em></p><p><strong>Do you ship internationally?</strong> </p><p><em>We can accommodate international orders, just reach out directly!</em></p><p><strong>Where is SUPERFREE made?</strong></p><p><em>Wilmington, NC</em></p><p></p><p><strong>Is your packaging recyclable?</strong> </p><p><em>Yes! We have a commitment to clean products in every dimension possible, so we use glass jars on purpose as glass is non-toxic, non-porous, and therefore won’t leach harmful chemicals into the foods nor into your body. They are also super easy to re-use/purpose – make candles, mini plant pots, store dry goods, etc. (we think they’re cute). Dry goods bags are totally recyclable / reusable as well. </em></p><p><strong>Are you hiring? </strong></p><p><em>YES! We are actively looking for a fractional CMO.<br/>We are slowly building out other aspects of our team and will need more and more help as time goes on! Please send us an email detailing how you think you could contribute to the cause. We look forward to hearing from you!</em></p><p><strong>I’d love to collaborate or do a feature or a giveaway with you, how is best to go about that?</strong><em> </em></p><p><em>We love it all! Email or DM us with your idea, can’t wait!</em></p>"
@@ -52,6 +53,7 @@
         },
         "4113229c-4cfc-4b39-8e42-b16bac77ac34": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "title": "ORDERING GUIDE",
             "text": "<p><strong>I just placed an order. How soon can I expect it?</strong></p><p><em>Typically orders are fulfilled within a week, often much sooner! Once we receive your order and it's marked ready to ship tracking will be sent your way!</em></p><p><strong>I just placed an order. Can I change or cancel it?</strong> </p><p><em>Reach out to us as soon as possible and we should be able to work that out for you! No guarantees if processing has already begun.</em></p><p><strong>What is your return policy?</strong></p><p><em>Unfortunately we cannot accept returns, items range in perishability (view item descriptions) but if there is an issue don’t hesitate to reach out so we can best solve it for you.</em></p>"
@@ -59,6 +61,7 @@
         },
         "46a41d39-bed9-400e-8adf-6269b13ae09d": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "title": "SUBSCRIPTIONS",
             "text": "<p><strong>Why should I subscribe?</strong></p><p><em>Being on our monthly rotation for your anti-inflammatory goods makes it so their benefits can be sustainably held. Though they're great when enjoyed at any level of frequency, they're truly meant to be a part of your daily self care rituals and morning routines, especially. We're big believers in setting the tone for you gut, and thus your whole health. The choices you make and how you start each day has a ripple effect throughout the rest of your life. Having the goods on hand makes healthy nourishing energy sustaining choices much more likely. And you don't have to keep track or make a decision every time – just have the goods show up at your door and satiate in true self care.</em></p><p><em><br/></em><strong>How do I set up subscriptions?<br/></strong><em><br/>Get your anti–inflammatory goods shipped on the regular! Select the items you want and their quantities and make sure to choose \"subscribe and save\" under the purchase options. You get a discount that way, as well. And, you can take remembering this task off of your plate!</em></p><p><strong>Canceling Subscription?</strong> </p><p><em>Anytime! We run no commitment subscriptions: Pause, skip, change, cancel literally anytime without penalty. The goal is to make your life easier and to make you feel more supported in any way we can! </em></p>"
@@ -66,6 +69,7 @@
         },
         "faq_w7EKQn": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "title": "",
             "text": ""
@@ -428,6 +432,63 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "collapsible_content_feydeh": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_cBqnaw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why should I subscribe?",
+            "icon": "none",
+            "row_content": "<p>Being on our monthly rotation for your anti-inflammatory goods makes it so their benefits can be sustainably held. Though they're great when enjoyed at any level of frequency, they're truly meant to be a part of your daily self care rituals and morning routines, especially. We're big believers in setting the tone for you gut, and thus your whole health. The choices you make and how you start each day has a ripple effect throughout the rest of your life. Having the goods on hand makes healthy nourishing energy sustaining choices much more likely. And you don't have to keep track or make a decision every time – just have the goods show up at your door and satiate in true self care.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bUxkk8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I set up subscriptions?",
+            "icon": "none",
+            "row_content": "<p>Get your anti–inflammatory goods shipped on the regular! Select the items you want and their quantities and make sure to choose \"subscribe and save\" under the purchase options. You get a discount that way, as well. And, you can take remembering this task off of your plate!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LcizV8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I cancel my subscription?",
+            "icon": "none",
+            "row_content": "<p>Anytime! We run no commitment subscriptions: Pause, skip, change, cancel literally anytime without penalty. The goal is to make your life easier and to make you feel more supported in any way we can!</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_cBqnaw",
+        "collapsible_row_bUxkk8",
+        "collapsible_row_LcizV8"
+      ],
+      "custom_css": [
+        "h2 {font-size: 36px; text-transform: uppercase; margin-bottom: 10px;}",
+        "h3 {font-size: 18px !important; line-height: 24px;}",
+        ".collapsible-content__wrapper {max-width: 900px; width: 100%; margin: 0 auto;}"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Subscirptions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -436,6 +497,7 @@
     "collapsible_content_67kHCn",
     "collapsible_content_MaUA6k",
     "collapsible_content_wK7JtP",
-    "collapsible_content_tfrahY"
+    "collapsible_content_tfrahY",
+    "collapsible_content_feydeh"
   ]
 }
