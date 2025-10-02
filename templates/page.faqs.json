@@ -60,6 +60,13 @@
             "title": "SUBSCRIPTIONS",
             "text": "<p><strong>Why should I subscribe?</strong></p><p><em>Being on our monthly rotation for your anti-inflammatory goods makes it so their benefits can be sustainably held. Though they're great when enjoyed at any level of frequency, they're truly meant to be a part of your daily self care rituals and morning routines, especially. We're big believers in setting the tone for you gut, and thus your whole health. The choices you make and how you start each day has a ripple effect throughout the rest of your life. Having the goods on hand makes healthy nourishing energy sustaining choices much more likely. And you don't have to keep track or make a decision every time – just have the goods show up at your door and satiate in true self care.</em></p><p><em><br/></em><strong>How do I set up subscriptions?<br/></strong><em><br/>Get your anti–inflammatory goods shipped on the regular! Select the items you want and their quantities and make sure to choose \"subscribe and save\" under the purchase options. You get a discount that way, as well. And, you can take remembering this task off of your plate!</em></p><p><strong>Canceling Subscription?</strong> </p><p><em>Anytime! We run no commitment subscriptions: Pause, skip, change, cancel literally anytime without penalty. The goal is to make your life easier and to make you feel more supported in any way we can! </em></p>"
           }
+        },
+        "faq_w7EKQn": {
+          "type": "faq",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
         }
       },
       "block_order": [
@@ -69,7 +76,8 @@
         "77667bc5-9d7a-4ce7-8df6-cdb82a63aaaa",
         "6f33dc01-e0d7-41e4-81c6-54ee58a3b2d2",
         "4113229c-4cfc-4b39-8e42-b16bac77ac34",
-        "46a41d39-bed9-400e-8adf-6269b13ae09d"
+        "46a41d39-bed9-400e-8adf-6269b13ae09d",
+        "faq_w7EKQn"
       ],
       "settings": {}
     },
@@ -99,16 +107,17 @@
         "collapsible_row_fExC9T",
         "collapsible_row_MQHKXN"
       ],
-      "disabled": true,
       "custom_css": [
-        "h2 {text-transform: uppercase;}"
+        "h2 {font-size: 36px; text-transform: uppercase; margin-bottom: 10px;}",
+        "h3 {font-size: 18px !important; line-height: 24px;}",
+        ".collapsible-content__wrapper {max-width: 900px; width: 100%; margin: 0 auto;}"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
         "heading": "Ingredients / Products",
         "heading_size": "h2",
-        "heading_alignment": "center",
+        "heading_alignment": "left",
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",
@@ -185,16 +194,17 @@
         "collapsible_row_wCKgT6",
         "collapsible_row_Kp7BYf"
       ],
-      "disabled": true,
       "custom_css": [
-        "h2 {text-transform: uppercase;}"
+        "h2 {font-size: 36px; text-transform: uppercase; margin-bottom: 10px;}",
+        "h3 {font-size: 18px !important; line-height: 24px;}",
+        ".collapsible-content__wrapper {max-width: 900px; width: 100%; margin: 0 auto;}"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
         "heading": "Nutrition",
         "heading_size": "h2",
-        "heading_alignment": "center",
+        "heading_alignment": "left",
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",
@@ -252,9 +262,6 @@
         "collapsible_row_LcVwMQ"
       ],
       "disabled": true,
-      "custom_css": [
-        "h2 {text-transform: uppercase;}"
-      ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
