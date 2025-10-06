@@ -556,7 +556,7 @@
         "column_6hbWYh"
       ],
       "custom_css": [
-        "h2 {font-size: 36px; text-transform: uppercase; margin: 0 auto;}",
+        "h2 {font-size: 36px; text-transform: uppercase; margin: 0 auto; text-align:center;}",
         ".multicolumn {max-width: 1050px; width: 100%; margin: 0 auto;}",
         ".multicolumn-card {background: #fff;}"
       ],
