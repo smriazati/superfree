@@ -93,12 +93,33 @@
       "settings": {
         "text": "ANTI INFLAMMATORY ADAPTOGENIC ACTIVATED PARASYMPATHETIC PAIN FREE GUILT FREE SUPERFREE SUPERFOOD PLANT RICH CLEAN EATING CLEAR MIND GUT HEALING"
       }
+    },
+    "1760052962b103e0e6": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_VPeEht": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_VPeEht"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "17600528703cfaa2f1",
     "1668645280b8cf3c4e",
-    "ad49fdaf-2ba7-4f8c-9f25-8bfa26cfd2d2"
+    "ad49fdaf-2ba7-4f8c-9f25-8bfa26cfd2d2",
+    "1760052962b103e0e6"
   ]
 }
