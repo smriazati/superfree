@@ -66,8 +66,8 @@
       "type": "page",
       "custom_css": [
         "h2 {text-transform: uppercase; text-align: left; color: #fff;}",
-        "p {color:#fff;}",
-        "h5 {}",
+        "p {color: #fff; font-size: 24px; line-height: 1.2em; margin-bottom: 15px;}",
+        "h5 {font-size:16px; color: #fff; font-weight: 600;}",
         ".color-background-1 {background-color: #101414;}"
       ],
       "name": "t:sections.page.presets.name",
