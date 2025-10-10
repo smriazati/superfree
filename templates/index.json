@@ -68,7 +68,9 @@
         "h2 {text-transform: uppercase; text-align: left; color: #fff;}",
         "p {color: #fff; font-size: 24px; line-height: 1.2em; margin-bottom: 15px;}",
         "h5 {font-size: 16px; color: #fff; font-weight: 600;}",
-        ".color-background-1 {background-color: #101414; display: grid; grid-template-columns: 2fr 1fr; align-items: center; gap: 20px;}"
+        ".color-background-1 {background-color: #101414;}",
+        ".review-section {display: grid; grid-template-columns: 2fr 1fr; align-items: center; gap: 20px;}",
+        ".review-image img {width: 100%; height: auto; display: block; object-fit: cover;}"
       ],
       "name": "t:sections.page.presets.name",
       "settings": {
