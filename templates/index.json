@@ -47,6 +47,20 @@
         "menu": "shop-menu"
       }
     },
+    "page_A47TDz": {
+      "type": "page",
+      "custom_css": [
+        "h2 {display: none;}"
+      ],
+      "name": "t:sections.page.presets.name",
+      "settings": {
+        "page": "testimonial",
+        "heading_size": "h2",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "79a04a94-b502-4c5e-9c7c-37ff3f5f6315": {
       "type": "home-cta",
       "settings": {
@@ -61,20 +75,6 @@
       "settings": {
         "text": "ANTI INFLAMMATORY ADAPTOGENIC ACTIVATED PARASYMPATHETIC PAIN FREE GUILT FREE SUPERFREE SUPERFOOD PLANT RICH CLEAN EATING CLEAR MIND GUT HEALING"
       }
-    },
-    "page_A47TDz": {
-      "type": "page",
-      "custom_css": [
-        "h2 {display: none;}"
-      ],
-      "name": "t:sections.page.presets.name",
-      "settings": {
-        "page": "testimonial",
-        "heading_size": "h2",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -83,8 +83,8 @@
     "da7ae838-c155-4b80-a8e6-cfd38dcb9147",
     "a778460e-a9ca-4389-9401-d345db4566ce",
     "3d2969a6-4f31-44d0-b3cb-797c1a8f536b",
+    "page_A47TDz",
     "79a04a94-b502-4c5e-9c7c-37ff3f5f6315",
-    "a9f4b05d-f132-48b2-a968-896e381ed0c4",
-    "page_A47TDz"
+    "a9f4b05d-f132-48b2-a968-896e381ed0c4"
   ]
 }
