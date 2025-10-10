@@ -2013,6 +2013,7 @@ input[type='checkbox'] {
     text-align:center;
   font-size: 38px;
   line-height: 1em;
+  padding-top:20px;
   padding-bottom: 50px;
   width:80%;
   margin: 0 auto;
