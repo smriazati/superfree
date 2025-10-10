@@ -65,7 +65,10 @@
     "page_A47TDz": {
       "type": "page",
       "custom_css": [
-        "h2 {text-transform: uppercase; text-align: left; color: #fff;}"
+        "h2 {text-transform: uppercase; text-align: left; color: #fff;}",
+        "p {color:#fff;}",
+        "h5 {}",
+        ".color-background-1 {background-color: #101414;}"
       ],
       "name": "t:sections.page.presets.name",
       "settings": {
