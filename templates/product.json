@@ -16,6 +16,11 @@
           "type": "title",
           "settings": {}
         },
+        "judge_me_reviews_preview_badge_Rg6rin": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
         "0ae9ca77-c074-4080-9aab-b13893312d16": {
           "type": "price",
           "settings": {}
@@ -39,20 +44,16 @@
         "appstle_subscription_appstle_subscription_product_page_widget_4tW6FA": {
           "type": "shopify://apps/appstle-subscription/blocks/appstle-subscription-product-page-widget/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
           "settings": {}
-        },
-        "judge_me_reviews_preview_badge_Rg6rin": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
         }
       },
       "block_order": [
         "7b74ea3a-c660-4762-99ef-9b931aea5e43",
+        "judge_me_reviews_preview_badge_Rg6rin",
         "0ae9ca77-c074-4080-9aab-b13893312d16",
         "34d1b107-72c6-42e7-8072-bf5ccab0fa5f",
         "e0d66f31-3685-453b-b577-d254d80f3575",
         "947a3115-e477-4650-8b4c-326df7d43ab1",
-        "appstle_subscription_appstle_subscription_product_page_widget_4tW6FA",
-        "judge_me_reviews_preview_badge_Rg6rin"
+        "appstle_subscription_appstle_subscription_product_page_widget_4tW6FA"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -67,13 +68,13 @@
         "padding_bottom": 36
       }
     },
-    "17600528703cfaa2f1": {
+    "1760054483a7044191": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_review_widget_tCGk3M": {
+        "judge_me_reviews_review_widget_REyrrV": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "review_data": "sample_data",
+            "review_data": "real_data",
             "show_shop_reviews": false,
             "empty_state": "empty_widget",
             "max_width": 1200
@@ -81,14 +82,8 @@
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_tCGk3M"
+        "judge_me_reviews_review_widget_REyrrV"
       ],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "1668645280b8cf3c4e": {
-      "type": "apps",
       "settings": {
         "include_margins": true
       }
@@ -98,33 +93,11 @@
       "settings": {
         "text": "ANTI INFLAMMATORY ADAPTOGENIC ACTIVATED PARASYMPATHETIC PAIN FREE GUILT FREE SUPERFREE SUPERFOOD PLANT RICH CLEAN EATING CLEAR MIND GUT HEALING"
       }
-    },
-    "1760052962b103e0e6": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_VPeEht": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget",
-            "max_width": 1200
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_VPeEht"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
-    "17600528703cfaa2f1",
-    "1668645280b8cf3c4e",
-    "ad49fdaf-2ba7-4f8c-9f25-8bfa26cfd2d2",
-    "1760052962b103e0e6"
+    "1760054483a7044191",
+    "ad49fdaf-2ba7-4f8c-9f25-8bfa26cfd2d2"
   ]
 }
