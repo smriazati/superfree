@@ -2013,7 +2013,7 @@ input[type='checkbox'] {
     text-align:center;
   font-size: 38px;
   line-height: 1em;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   width:80%;
   margin: 0 auto;
 }
