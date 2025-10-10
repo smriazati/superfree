@@ -2003,4 +2003,10 @@ h5 {
   .review-section {
     grid-template-columns: 1fr;
   }
+
+  h3 {
+  font-size: 36px;
+  line-height: 1em;
+  margin-bottom: 125px;
+}
 }
