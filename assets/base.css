@@ -1999,3 +1999,8 @@ h5 {
   margin-bottom: -20px;
 }
 
+@media (max-width: 767px) {
+  .review-section {
+    grid-template-columns: 1fr;
+  }
+}
