@@ -1967,17 +1967,17 @@ input[type='checkbox'] {
   width: 85%;
   margin-left: 60px;
 }
-h3 {
+.review-text h3 {
   text-transform: uppercase;
   font-size: 48px;
   margin-bottom: 125px;
 }
-p {
+.review-text p {
   font-size: 32px;
   line-height: 1.35em;
   margin-bottom: 25px;
 }
-h5 {
+.review-text h5 {
   font-size: 21px;
   font-weight: 600;
   margin-bottom: 45px;
@@ -2009,7 +2009,7 @@ h5 {
     margin:0 auto;
   }
 
-  h3 {
+  .review-text h3 {
     margin: 0 auto;
     text-align:center;
   font-size: 38px;
@@ -2017,12 +2017,12 @@ h5 {
   margin-bottom: 50px;
 }
 
-p {
+.review-text p {
   text-align:center;
   font-size:24px;
   line-height:1em;
 }
-h5 {
+review-text h5 {
   font-size: 18px;
   text-align: center;
   margin:0 auto;
