@@ -2022,7 +2022,7 @@ input[type='checkbox'] {
   font-size:24px;
   line-height:1em;
 }
-review-text h5 {
+.review-text h5 {
   font-size: 18px;
   text-align: center;
   margin:0 auto;
