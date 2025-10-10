@@ -2004,6 +2004,11 @@ h5 {
     grid-template-columns: 1fr;
   }
 
+  .review-text {
+    width: 100%;
+    margin:0 auto;
+  }
+
   h3 {
     margin: 0 auto;
     text-align:center;
