@@ -44,6 +44,7 @@
   background: var(--black);
   color: var(--white);
   padding: 17px;
+  margin-bottom: 34px;
 }
 
 .product-form__submit {
