@@ -379,14 +379,16 @@
                       
                     >
                       <span class='appstle_stand_alone_selector' data-product-data='{{ all_products[product.handle] | json | escape }}' style="display:none;"></span>
-                    <img src="https://ik.imagekit.io/mdclzmx6brh/subscriptions_2afFCHVxa.png" onload="appstleInit()" style="display: none;">
+                    <img src="https://ik.imagekit.io/mdclzmx6brh/subscriptions_2afFCHVxa.png" onload="if (typeof appstleInit === 'function') { appstleInit(); }" style="display: none;">
+                    
+>
                     <div class="product-form__buttons">
                       <button
                         type="submit"
                         name="add"
                         class="product-form__submit btn-rainbow button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
                         {% if product.selected_or_first_available_variant.available == false %}
-                          disabled
+                          
                         {% endif %}
                       >
                         <span>
