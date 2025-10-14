@@ -44,17 +44,3 @@ document.addEventListener('shopify:section:load', () => {
   recalculateFlexLayouts?.();
 });
 
-function waitForAppstleInit(maxRetries = 30) {
-  if (typeof appstleInit === 'function') {
-    console.log("✅ Appstle is ready");
-    appstleInit();
-  } else if (maxRetries > 0) {
-    setTimeout(() => waitForAppstleInit(maxRetries - 1), 200);
-  } else {
-    console.warn("⚠️ appstleInit was never defined");
-  }
-}
-
-document.addEventListener('DOMContentLoaded', waitForAppstleInit);
-document.addEventListener('shopify:section:load', waitForAppstleInit);
-
