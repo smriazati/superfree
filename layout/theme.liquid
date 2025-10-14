@@ -207,7 +207,30 @@
 
 <script src="https://cdn.shopify.com/s/files/1/0640/6776/4452/t/3/assets/appstle-subscription.js?v=1687465924"></script>
 
+<script>
+  // 🛠️ Safe Appstle initialization
+  function safeAppstleInit(maxRetries = 50) {
+    const productForm = document.querySelector('form[action*="/cart/add"]');
+    const subscriptionEl = document.querySelector('[id*="appstle-"]');
 
+    // ✅ Only run once appstleInit exists and product form is present
+    if (typeof appstleInit === 'function' && productForm) {
+      console.log("✅ Appstle initialized after section load");
+      appstleInit();
+    } else if (maxRetries > 0) {
+      console.log("⏳ Waiting for Appstle...");
+      setTimeout(() => safeAppstleInit(maxRetries - 1), 300);
+    } else {
+      console.warn("⚠️ Appstle still not ready after waiting.");
+    }
+  }
+
+  // 🧠 Run once the page DOM is loaded
+  document.addEventListener('DOMContentLoaded', safeAppstleInit);
+
+  // 🔄 Run again whenever Shopify dynamically reloads product sections (AJAX navigation)
+  document.addEventListener('shopify:section:load', safeAppstleInit);
+</script>
 
   </body>
 </html>
