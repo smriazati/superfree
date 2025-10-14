@@ -32,77 +32,83 @@ document.addEventListener('shopify:section:load', () => {
 
 
 function initAll() {
-  console.log("🔄 initAll() called — reinitializing key features...");
+  console.log("🔄 initAll() running...");
 
-  // 🛒 Re-bind Add-to-Cart button (optional safeguard)
-  const productForm = document.querySelector('form[action*="/cart/add"]');
-  if (productForm) {
-    const atcButton = productForm.querySelector('button[name="add"]');
-    if (atcButton) {
-      atcButton.removeEventListener('click', handleATC);
-      atcButton.addEventListener('click', handleATC);
+  // 🛒 --- Reinitialize Shopify product form ---
+  if (window.Shopify && window.Shopify.bind) {
+    try {
+      document.querySelectorAll('form[action*="/cart/add"]').forEach(form => {
+        if (!form.hasAttribute('data-rebound')) {
+          window.Shopify.bind(form);
+          form.setAttribute('data-rebound', 'true');
+        }
+      });
+    } catch (e) {
+      console.warn("⚠️ Could not re-bind Shopify product form:", e);
     }
   }
 
-  // ⭐️ Re-trigger Judge.me reviews if present
+  // 🖼️ --- Re-init image gallery / slideshow ---
+  if (window.Swiper) {
+    document.querySelectorAll('.swiper, .swiper-container').forEach(el => {
+      if (!el.__swiper) {
+        new Swiper(el, {
+          loop: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      }
+    });
+  } else {
+    console.log("⚠️ Swiper not detected — skipping gallery init");
+  }
+
+  // ⭐ --- Re-trigger Judge.me reviews ---
   if (window.jQuery && typeof jQuery(document).trigger === 'function') {
     jQuery(document).trigger('judgeme:reload');
   }
 
-  // 📸 Re-initialize Swiper or product gallery if needed
-  if (window.Swiper) {
-    document.querySelectorAll('.swiper, .swiper-container').forEach(el => {
-      if (!el.__swiper) {
-        // Example: uncomment and adjust options if needed
-        // new Swiper(el, { loop: true });
-      }
-    });
-  }
-
-  // 🪄 Safely initialize Appstle if available
+  // 🪄 --- Re-trigger Appstle ---
   if (typeof appstleInit === 'function') {
     try {
-      console.log("✅ Calling appstleInit()");
       appstleInit();
-    } catch (err) {
-      console.warn("⚠️ Appstle initialization failed:", err);
+    } catch (e) {
+      console.warn("⚠️ Appstle re-init error:", e);
     }
   } else {
-    console.warn("⚠️ appstleInit is still undefined, retrying...");
     waitForAppstleInit();
   }
+
+  // 🧩 --- Re-trigger Shopify Sections (layout fixes) ---
+  if (window.Shopify && Shopify.designMode) {
+    document.dispatchEvent(new CustomEvent('shopify:section:load'));
+  }
+
+  // 🪟 --- Fix flex layout reflow issues ---
+  document.querySelectorAll('.flex-container').forEach(el => {
+    el.style.display = 'flex';
+  });
+
+  console.log("✅ initAll complete.");
 }
 
-// ⏱️ Fallback: Wait for Appstle to load if not defined yet
+// ⏱️ Helper: wait for Appstle if not ready yet
 function waitForAppstleInit(retries = 20) {
   if (typeof appstleInit === 'function') {
-    console.log("✅ appstleInit became available — initializing...");
     appstleInit();
   } else if (retries > 0) {
     setTimeout(() => waitForAppstleInit(retries - 1), 300);
-  } else {
-    console.warn("❌ appstleInit still not defined after waiting.");
   }
 }
 
-// 📍 Run on initial page load
+// 📍 Listen for all the important events
 document.addEventListener('DOMContentLoaded', initAll);
-
-// 📍 Re-run whenever Shopify reloads a section (e.g. product page)
 document.addEventListener('shopify:section:load', initAll);
-
-// 📍 Re-run after PJAX / Barba page transitions
 if (window.barba && window.barba.hooks) {
   window.barba.hooks.after(() => {
-    console.log("📦 Barba page transition complete — reinitializing...");
-    requestAnimationFrame(initAll);
+    console.log("📦 Barba transition finished — re-initializing...");
+    setTimeout(initAll, 200);
   });
 }
-
-// 📍 Safety net: MutationObserver (optional, but useful for edge cases)
-const mo = new MutationObserver(() => {
-  if (document.querySelector('[id*="appstle-"]')) {
-    initAll();
-  }
-});
-mo.observe(document.body, { childList: true, subtree: true });
