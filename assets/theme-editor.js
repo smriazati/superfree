@@ -48,6 +48,8 @@ function initAll() {
     }
   }
 
+  if (typeof initProductModel === 'function') initProductModel();
+
   // 🖼️ --- Re-init image gallery / slideshow ---
   if (window.Swiper) {
     document.querySelectorAll('.swiper, .swiper-container').forEach(el => {
