@@ -30,7 +30,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -155,7 +155,7 @@
         "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "container_color_scheme": "background-2",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
@@ -242,7 +242,7 @@
         "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "container_color_scheme": "background-2",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
@@ -309,7 +309,7 @@
         "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "container_color_scheme": "background-2",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
@@ -396,7 +396,7 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "container_color_scheme": "background-2",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
@@ -559,7 +559,7 @@
         "h2 {font-size: 36px; text-transform: uppercase; margin: 0 auto; text-align: center;}",
         ".multicolumn {max-width: 1050px; width: 100%; margin: 0 auto;}",
         ".multicolumn-card {background: #fff;}",
-        "@media screen and (max-width: 749px) {.multicolumn-list__item:nth-child(1) .multicolumn-card__info {padding-bottom: 1.5rem; } .multicolumn-list__item:nth-child(2) .multicolumn-card__info {padding-top: 0;padding-bottom: 1.5rem; } .multicolumn-list__item:last-child .multicolumn-card__info {padding-top: 0 !important; }}"
+        "@media screen and (max-width: 749px) {.multicolumn-list__item:nth-child(1) .multicolumn-card__info {padding-bottom: 1.5rem; } .multicolumn-list__item:nth-child(2) .multicolumn-card__info {padding-top: 0; padding-bottom: 1.5rem; } .multicolumn-list__item:last-child .multicolumn-card__info {padding-top: 0 !important; }}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
