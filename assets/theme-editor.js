@@ -1,3 +1,7 @@
+document.addEventListener('shopify:section:load', (e) => {
+  console.log('✅ section loaded:', e.detail);
+});
+
 document.addEventListener('shopify:block:select', function(event) {
   const blockSelectedIsSlide = event.target.classList.contains('slideshow__slide');
   if (!blockSelectedIsSlide) return;
