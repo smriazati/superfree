@@ -43,3 +43,12 @@ document.addEventListener('shopify:section:load', () => {
   // 🧩 Re-run any custom layout fixes
   recalculateFlexLayouts?.();
 });
+
+
+function initEverything() {
+  initProductCarousel();
+  setupAddToCartButton();
+}
+
+document.addEventListener('DOMContentLoaded', initEverything);
+document.addEventListener('shopify:section:load', initEverything);
