@@ -48,9 +48,7 @@ function initAll() {
     }
   }
 
-  if (typeof initProductModel === 'function') initProductModel();
-
-  // 🖼️ --- Re-init image gallery / slideshow ---
+  // 🖼️ --- Re-init image gallery (just in case) ---
   if (window.Swiper) {
     document.querySelectorAll('.swiper, .swiper-container').forEach(el => {
       if (!el.__swiper) {
@@ -63,8 +61,6 @@ function initAll() {
         });
       }
     });
-  } else {
-    console.log("⚠️ Swiper not detected — skipping gallery init");
   }
 
   // ⭐ --- Re-trigger Judge.me reviews ---
@@ -79,13 +75,6 @@ function initAll() {
     } catch (e) {
       console.warn("⚠️ Appstle re-init error:", e);
     }
-  } else {
-    waitForAppstleInit();
-  }
-
-  // 🧩 --- Re-trigger Shopify Sections (layout fixes) ---
-  if (window.Shopify && Shopify.designMode) {
-    document.dispatchEvent(new CustomEvent('shopify:section:load'));
   }
 
   // 🪟 --- Fix flex layout reflow issues ---
@@ -96,21 +85,5 @@ function initAll() {
   console.log("✅ initAll complete.");
 }
 
-// ⏱️ Helper: wait for Appstle if not ready yet
-function waitForAppstleInit(retries = 20) {
-  if (typeof appstleInit === 'function') {
-    appstleInit();
-  } else if (retries > 0) {
-    setTimeout(() => waitForAppstleInit(retries - 1), 300);
-  }
-}
-
-// 📍 Listen for all the important events
+// Only run once now — no need for section load or Barba hooks
 document.addEventListener('DOMContentLoaded', initAll);
-document.addEventListener('shopify:section:load', initAll);
-if (window.barba && window.barba.hooks) {
-  window.barba.hooks.after(() => {
-    console.log("📦 Barba transition finished — re-initializing...");
-    setTimeout(initAll, 200);
-  });
-}
