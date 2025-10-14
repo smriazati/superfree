@@ -205,13 +205,7 @@
 
 {{ 'atc-guard.js' | asset_url | script_tag }}
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var script = document.createElement('script');
-    script.src = "{{ 'appstle-init.js' | asset_url }}";
-    document.body.appendChild(script);
-  });
-</script>
+
 
 
   </body>
