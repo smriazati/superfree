@@ -1,7 +1,7 @@
 (function (window, k) {
     if (!window.AppstleIncluded && (!urlIsProductPage() || 'V1' === 'V2')) {
       window.AppstleIncluded = true;
-      appstleLoadScript = function (src, callback) {
+     /* appstleLoadScript = function (src, callback) {
         var script = document.createElement("script");
         script.charset = "utf-8";
             script.defer = true;
@@ -12,13 +12,13 @@
             script = k;
             callback && callback();
           }
-        };
+        }; */
             document.getElementsByTagName("body")[0].appendChild(script)
       };
 
-
+/*
       appstleLoadScript("https://cdn.shopify.com/s/files/1/0640/6776/4452/t/3/assets/appstle-subscription.js?v=1687465924");
-
+*/
 
       window.RS = Window.RS || {};
       RS.Config = {
