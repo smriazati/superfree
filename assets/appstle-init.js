@@ -17,7 +17,6 @@
       };
 
 
-      appstleLoadScript("https://cdn.shopify.com/s/files/1/0640/6776/4452/t/3/assets/appstle-subscription.js?v=1687465924");
 
 
       window.RS = Window.RS || {};
@@ -198,6 +197,9 @@
       };
 
     }
+
+      appstleLoadScript("https://cdn.shopify.com/s/files/1/0640/6776/4452/t/3/assets/appstle-subscription.js?v=1687465924");
+
 
     function urlIsProductPage() {
     // return null != decodeURIComponent(window.location.pathname).match(/\/products\/(([a-zA-Z0-9]|[\-\.\_\~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[\ud83c\ud83d\ud83e][\ud000-\udfff]){1,})\/?/)
