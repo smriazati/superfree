@@ -132,8 +132,7 @@
     }
     </script>
   </head>
-  
-<script src="{{ 'appstle-init.js' | asset_url }}"></script>
+
 
   <body data-barba="wrapper" data-trans="block">
     {% include 'agechecker' %}
@@ -205,6 +204,15 @@
     {%- endunless -%}
 
 {{ 'atc-guard.js' | asset_url | script_tag }}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var script = document.createElement('script');
+    script.src = "{{ 'appstle-init.js' | asset_url }}";
+    document.body.appendChild(script);
+  });
+</script>
+
 
   </body>
 </html>
