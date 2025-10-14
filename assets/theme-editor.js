@@ -44,3 +44,21 @@ document.addEventListener('shopify:section:load', () => {
   recalculateFlexLayouts?.();
 });
 
+function safeAppstleInit(maxRetries = 40) {
+  const productForm = document.querySelector('form[action*="/cart/add"]');
+  const subscriptionEl = document.querySelector('[id*="appstle-"]');
+
+  // ✅ Only run if the product form AND the appstle elements exist
+  if (typeof appstleInit === 'function' && productForm) {
+    console.log("✅ Appstle initialized after section load");
+    appstleInit();
+  } else if (maxRetries > 0) {
+    console.log("⏳ Waiting for Appstle...");
+    setTimeout(() => safeAppstleInit(maxRetries - 1), 300);
+  } else {
+    console.warn("⚠️ Appstle still not ready after waiting");
+  }
+}
+
+document.addEventListener('DOMContentLoaded', safeAppstleInit);
+document.addEventListener('shopify:section:load', safeAppstleInit);
