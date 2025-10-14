@@ -53,6 +53,20 @@ window.ProductModel = {
   },
 };
 
-window.addEventListener('DOMContentLoaded', () => {
-  if (window.ProductModel) window.ProductModel.loadShopifyXR();
-});
+function initProductModel() {
+  if (window.ProductModel) {
+    console.log("🔄 Re-initializing ProductModel / ShopifyXR");
+    window.ProductModel.loadShopifyXR();
+  }
+}
+
+// Still run once on initial load
+document.addEventListener('DOMContentLoaded', initProductModel);
+
+// ✅ Also run again whenever sections reload
+document.addEventListener('shopify:section:load', initProductModel);
+
+// ✅ And run again after Barba transitions
+if (window.barba && window.barba.hooks) {
+  window.barba.hooks.after(initProductModel);
+}
