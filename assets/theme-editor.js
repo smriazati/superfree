@@ -20,11 +20,25 @@ document.addEventListener('shopify:block:deselect', function(event) {
 });
 
 document.addEventListener('shopify:section:load', () => {
+  // 🔁 Re-run Zoom-on-Hover logic
   const zoomOnHoverScript = document.querySelector('[id^=EnableZoomOnHover]');
-  if (!zoomOnHoverScript) return;
   if (zoomOnHoverScript) {
     const newScriptTag = document.createElement('script');
     newScriptTag.src = zoomOnHoverScript.src;
     zoomOnHoverScript.parentNode.replaceChild(newScriptTag, zoomOnHoverScript);
   }
+
+  // 🛒 Re-initialize Add to Cart button
+  setupAddToCartButton?.();
+
+  // 📸 Re-initialize product carousel
+  initProductCarousel?.();
+
+  // ⭐️ Re-initialize Judge.me reviews
+  if (window.jQuery && typeof jQuery(document).trigger === 'function') {
+    jQuery(document).trigger('judgeme:reload');
+  }
+
+  // 🧩 Re-run any custom layout fixes
+  recalculateFlexLayouts?.();
 });
