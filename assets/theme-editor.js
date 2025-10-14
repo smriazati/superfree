@@ -28,37 +28,5 @@ document.addEventListener('shopify:section:load', () => {
     newScriptTag.src = zoomOnHoverScript.src;
     zoomOnHoverScript.parentNode.replaceChild(newScriptTag, zoomOnHoverScript);
   }
-
-  // 🛒 Re-initialize Add to Cart button
-  setupAddToCartButton?.();
-
-  // 📸 Re-initialize product carousel
-  initProductCarousel?.();
-
-  // ⭐️ Re-initialize Judge.me reviews
-  if (window.jQuery && typeof jQuery(document).trigger === 'function') {
-    jQuery(document).trigger('judgeme:reload');
-  }
-
-  // 🧩 Re-run any custom layout fixes
-  recalculateFlexLayouts?.();
 });
 
-function safeAppstleInit(maxRetries = 40) {
-  const productForm = document.querySelector('form[action*="/cart/add"]');
-  const subscriptionEl = document.querySelector('[id*="appstle-"]');
-
-  // ✅ Only run if the product form AND the appstle elements exist
-  if (typeof appstleInit === 'function' && productForm) {
-    console.log("✅ Appstle initialized after section load");
-    appstleInit();
-  } else if (maxRetries > 0) {
-    console.log("⏳ Waiting for Appstle...");
-    setTimeout(() => safeAppstleInit(maxRetries - 1), 300);
-  } else {
-    console.warn("⚠️ Appstle still not ready after waiting");
-  }
-}
-
-document.addEventListener('DOMContentLoaded', safeAppstleInit);
-document.addEventListener('shopify:section:load', safeAppstleInit);
