@@ -12,9 +12,9 @@
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/SuperFreeFoods_MacaMaca_BlueWater.jpg",
-        "heading": "WE MAKE Anti–inflammatory GUT HEALTHY FOODS to help you feel good in your body",
-        "button": "Shop goods"
+        "image": "shopify://shop_images/maca_butter_squeeze_on_water.png",
+        "heading": "PERMISSION TO BE FREE IN YOUR BODY",
+        "button": "Shop GUT HEALTHY goods"
       }
     },
     "featured_collection": {
