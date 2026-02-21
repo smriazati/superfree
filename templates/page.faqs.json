@@ -217,7 +217,7 @@
           "settings": {
             "heading": "I or my loved one was recently diagnosed with an autoimmune/inflammatory disease or condition, what do I eat?",
             "icon": "none",
-            "row_content": "<p>This of course is a case by case answer, but overall our foods are meant to be not only friendly but actively healing for these situations, especially when it comes to gut health. We aim to keep our goods approachable and extra delicious so nobody feels like they're missing out, especially when confronting new dietary restrictions. We’re here for you! Keep a lookout for more resources popping up on our site (such as customized holistic nutritional counseling!), and feel free to reach out to inquire about your particular needs. This is what we do and why we do it, we would love to hear from you.</p>",
+            "row_content": "<p>This of course is a case by case answer, but overall our foods are meant to be not only friendly but actively healing for these situations, especially when it comes to gut health. We aim to keep our goods approachable and extra delicious so nobody feels like they're missing out, especially when confronting new dietary restrictions. We’re here for you! Keep a lookout for more resources popping up on our site and book a initial <a href=\"https://calendar.app.google/EVXfceo8RjcAYcsH9\" target=\"_blank\" title=\"https://calendar.app.google/EVXfceo8RjcAYcsH9\">Holistic Nutritional Counseling session</a> with founder Madeline Lee – feel free to reach out to inquire about your particular needs. This is what we do and why we do it, we would love to hear from you.</p>",
             "page": ""
           }
         }
@@ -268,7 +268,7 @@
           "settings": {
             "heading": "What's your favorite use?",
             "icon": "none",
-            "row_content": "<p>A big scoop of Maca Butter and a dropper full of Gut Mct blended into coffee first thing in the morning. Add in a few of our perfect dates and some of our beautiful raw Peruvian cacao and you're really doing a body good (we call this the \"elixir\", optimal for breaking the overnight fast – pro tip check out our \"Elixir Bundle\" and subscribe monthly to save big). Also put some Maca Butter on top of your soaked Adaptogenic Chia Oats and you are set for a good day everyday. Thank you very much.</p>",
+            "row_content": "<p>A big scoop of Maca Butter and a dropper full of Gut Mct blended into coffee first thing in the morning. Add in a few of our perfect dates and some of our beautiful raw Peruvian cacao and you're really doing a body good (we call this the \"elixir\", optimal for breaking the overnight fast – pro tip subscribe monthly to save big). Also put some Maca Butter on top of your soaked Adaptogenic Chia Oats and you are set for a good day, everyday. Thank you very much.</p>",
             "page": ""
           }
         },
@@ -339,24 +339,6 @@
             "page": ""
           }
         },
-        "collapsible_row_xx9jUt": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Where is SUPERFREE made?",
-            "icon": "none",
-            "row_content": "<p>Wilmington, NC</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_zwwynA": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Is your packaging recyclable?",
-            "icon": "none",
-            "row_content": "<p>Yes! We have a commitment to clean products in every dimension possible, so we use glass jars on purpose as glass is non-toxic, non-porous, and therefore won’t leach harmful chemicals into the foods nor into your body. They are also super easy to re-use/purpose – make candles, mini plant pots, store dry goods, etc. (we think they’re cute). Dry goods bags are totally recyclable / reusable as well. </p>",
-            "page": ""
-          }
-        },
         "collapsible_row_UTDxQk": {
           "type": "collapsible_row",
           "settings": {
@@ -371,7 +353,7 @@
           "settings": {
             "heading": "I’d love to collaborate or do a feature or a giveaway with you, how is best to go about that?",
             "icon": "none",
-            "row_content": "<p>We love it all! Email or DM us with your idea, can’t wait!</p>",
+            "row_content": "<p>We love it all! Email or DM us (@superfreefood) with your idea, can’t wait!</p>",
             "page": ""
           }
         }
@@ -379,8 +361,6 @@
       "block_order": [
         "collapsible_row_6G7CGG",
         "collapsible_row_QfXPXz",
-        "collapsible_row_xx9jUt",
-        "collapsible_row_zwwynA",
         "collapsible_row_UTDxQk",
         "collapsible_row_3fmfCW"
       ],
